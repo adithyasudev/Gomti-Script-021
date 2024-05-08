@@ -1,13 +1,16 @@
 
 
-import './App.css'
+
+import Navbar from './Components/Footer'
+
 
 function App() {
   
 
   return (
     <>
-      <p>Hello</p>
+     
+      <Navbar/>
       
     </>
   )
