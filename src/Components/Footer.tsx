@@ -16,7 +16,7 @@ const Navbar = () => {
         <li><a href="#">Get Hired</a></li>
         <li><a href="#">Sell Creative Assets</a></li>
         <li><a href="#">Sell Freelance Services</a></li>
-        <li><a href="#">Post a Job</a></li>
+        <li><a href="#">Post a Job</a></li><p>hello</p>
       </ul>
     </nav>
   );
