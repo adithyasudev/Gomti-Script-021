@@ -1,0 +1,15 @@
+{
+  
+ "user":[{
+    "id":"1",
+    "email":"tusharbisht0216@gmail.com",
+    "password":"tushar123"
+  }
+  ],
+  "admin":[{
+    "id":"1",
+    "username":"admin",
+    "password":"admin"
+  }
+  ]
+}
