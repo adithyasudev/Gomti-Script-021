@@ -1,6 +1,7 @@
 
 
 import './App.css'
+import Bluebox from './Components/Bluebox'
 
 function App() {
   
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <p>Hello</p>
-      
+  
     </>
   )
 }
