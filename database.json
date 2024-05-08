@@ -1,15 +1,317 @@
 {
-  
- "user":[{
-    "id":"1",
-    "email":"tusharbisht0216@gmail.com",
-    "password":"tushar123"
-  }
+  "user": [
+    {
+      "id": "1",
+      "name": "Tushar Bisht",
+      "number": "6897967568",
+      "email": "tusharbisht0216@gmail.com",
+      "password": "tushar123"
+    }
   ],
-  "admin":[{
-    "id":"1",
-    "username":"admin",
-    "password":"admin"
-  }
+  "admin": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin"
+    }
+  ],
+
+  "jobseekers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "degree": "Bachelor of Science in Computer Science",
+      "rating": 4.7,
+      "desiredRole": "Frontend Developer",
+      "profileImage": "https://i.pinimg.com/564x/8d/b7/f6/8db7f6a91935bc5bbfd84a71fefcfd18.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Michael Johnson",
+      "degree": "Bachelor of Arts in English Literature",
+      "rating": 3.9,
+      "desiredRole": "Content Writer",
+      "profileImage": "https://i.pinimg.com/564x/52/d6/c9/52d6c9815d604af110f7a16675b566fe.jpg"
+    },
+    {
+      "id": 3,
+      "name": "William Harris",
+      "degree": "Bachelor of Science in Mechanical Engineering",
+      "rating": 4.4,
+      "desiredRole": "Backend Developer",
+      "profileImage": "https://i.pinimg.com/564x/03/cd/da/03cddabe0a19f1b4c929d8fae2ad9351.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Jacob Sanchez",
+      "degree": "Bachelor of Science in Biology",
+      "rating": 4.6,
+      "desiredRole": "Data Analyst",
+      "profileImage": "https://i.pinimg.com/564x/93/f4/0e/93f40ec756290812571be534e12bcfe7.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Michael Torres",
+      "degree": "Bachelor of Science in Information Technology",
+      "rating": 4.7,
+      "desiredRole": "UI/UX Designer",
+      "profileImage": "https://i.pinimg.com/564x/d0/cb/d1/d0cbd1380c72ddf3750c896433b2dea1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Daniel Garcia",
+      "degree": "Bachelor of Arts in Anthropology",
+      "rating": 3.9,
+      "desiredRole": "Legal Consultant",
+      "profileImage": "https://i.pinimg.com/564x/07/33/ba/0733ba760b29378474dea0fdbcb97107.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Matthew Diaz",
+      "degree": "Bachelor of Arts in History",
+      "rating": 4.8,
+      "desiredRole": "Financial Analyst",
+      "profileImage": "https://i.pinimg.com/564x/ae/9b/ae/ae9bae263ed27be66a775eff13e603c5.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Benjamin Morales",
+      "degree": "Bachelor of Science in Mathematics",
+      "rating": 4.1,
+      "desiredRole": "Economist",
+      "profileImage": "https://i.pinimg.com/564x/91/21/f2/9121f2b3c557192b6fcd234782a7c399.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Jacob Hernandez",
+      "degree": "Bachelor of Science in Biomedical Engineering",
+      "rating": 4.4,
+      "desiredRole": "Aerospace Engineer",
+      "profileImage": "https://i.pinimg.com/564x/ed/63/46/ed63467e6ecc7e2064844a7d33099b97.jpg"
+    },
+    {
+      "id": 10,
+      "name": "James Martinez",
+      "degree": "Bachelor of Arts in Psychology",
+      "rating": 4.2,
+      "desiredRole": "Counselor",
+      "profileImage": "https://i.pinimg.com/564x/8d/b7/f6/8db7f6a91935bc5bbfd84a71fefcfd18.jpg"
+    },
+    {
+      "id": 11,
+      "name": "David Anderson",
+      "degree": "Master of Science in Data Science",
+      "rating": 4.8,
+      "desiredRole": "Data Analyst",
+      "profileImage": "https://i.pinimg.com/564x/52/d6/c9/52d6c9815d604af110f7a16675b566fe.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Olivia Lewis",
+      "degree": "Master of Science in Human Resources Management",
+      "rating": 4.6,
+      "desiredRole": "HR Manager",
+      "profileImage": "https://i.pinimg.com/564x/20/84/22/2084220e18961fba23a26966b3cd95cd.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Emily Smith",
+      "degree": "Master of Business Administration",
+      "rating": 4.2,
+      "desiredRole": "Digital Marketing",
+      "profileImage": "https://i.pinimg.com/564x/2e/3e/fd/2e3efdc0486a8858f9e0471eee3f68e5.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Sarah Wilson",
+      "degree": "Bachelor of Science in Civil Engineering",
+      "rating": 4.5,
+      "desiredRole": "Data Analytics",
+      "profileImage": "https://i.pinimg.com/564x/24/91/0f/24910f726e8e849d73ba395a584181f0.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Jessica Thompson",
+      "degree": "Bachelor of Fine Arts in Graphic Design",
+      "rating": 4.3,
+      "desiredRole": "UI/UX Designer",
+      "profileImage": "https://i.pinimg.com/564x/e2/e4/4b/e2e44bbb8a55ab9982f3ada987a43882.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Isabella Ramirez",
+      "degree": "Bachelor of Arts in Art History",
+      "rating": 4.4,
+      "desiredRole": "Content Writer",
+      "profileImage": "https://i.pinimg.com/564x/ae/9b/ae/ae9bae263ed27be66a775eff13e603c5.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Emily Rivera",
+      "degree": "Bachelor of Science in Chemistry",
+      "rating": 4.2,
+      "desiredRole": "Data Analyst",
+      "profileImage": "https://i.pinimg.com/564x/91/21/f2/9121f2b3c557192b6fcd234782a7c399.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Sophia Gomez",
+      "degree": "Bachelor of Science in Physics",
+      "rating": 4.5,
+      "desiredRole": "Data Analytics",
+      "profileImage": "https://i.pinimg.com/564x/ed/63/46/ed63467e6ecc7e2064844a7d33099b97.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Avery Reyes",
+      "degree": "Bachelor of Science in Computer Engineering",
+      "rating": 4.3,
+      "desiredRole": "Frontend Developer",
+      "profileImage": "https://i.pinimg.com/564x/e2/e4/4b/e2e44bbb8a55ab9982f3ada987a43882.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Mia Jimenez",
+      "degree": "Bachelor of Arts in Sociology",
+      "rating": 4.6,
+      "desiredRole": "Digital Marketing",
+      "profileImage": "https://i.pinimg.com/564x/2e/3e/fd/2e3efdc0486a8858f9e0471eee3f68e5.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Alexander Wilson",
+      "degree": "Bachelor of Science in Geology",
+      "rating": 4.5,
+      "desiredRole": "Economist",
+      "profileImage": "https://i.pinimg.com/564x/03/cd/da/03cddabe0a19f1b4c929d8fae2ad9351.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Robert Clark",
+      "degree": "Bachelor of Science in Accounting",
+      "rating": 4.1,
+      "desiredRole": "Financial Analyst",
+      "profileImage": "https://i.pinimg.com/564x/93/f4/0e/93f40ec756290812571be534e12bcfe7.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Benjamin Gonzalez",
+      "degree": "Bachelor of Science in Electrical Engineering",
+      "rating": 4.3,
+      "desiredRole": "Backend Developer",
+      "profileImage": "https://i.pinimg.com/564x/d0/cb/d1/d0cbd1380c72ddf3750c896433b2dea1.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Daniel Flores",
+      "degree": "Bachelor of Science in Aerospace Engineering",
+      "rating": 4.8,
+      "desiredRole": "Aerospace Engineer",
+      "profileImage": "https://i.pinimg.com/564x/07/33/ba/0733ba760b29378474dea0fdbcb97107.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Matthew Guzman",
+      "degree": "Bachelor of Science in Geology",
+      "rating": 4.6,
+      "desiredRole": "Data Analyst",
+      "profileImage": "https://i.pinimg.com/564x/ae/9b/ae/ae9bae263ed27be66a775eff13e603c5.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Benjamin Rojas",
+      "degree": "Bachelor of Arts in Economics",
+      "rating": 4.4,
+      "desiredRole": "Economist",
+      "profileImage": "https://i.pinimg.com/564x/91/21/f2/9121f2b3c557192b6fcd234782a7c399.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Jacob Soto",
+      "degree": "Bachelor of Science in Finance",
+      "rating": 4.5,
+      "desiredRole": "Financial Analyst",
+      "profileImage": "https://i.pinimg.com/564x/ed/63/46/ed63467e6ecc7e2064844a7d33099b97.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Michael Valdez",
+      "degree": "Bachelor of Science in Kinesiology",
+      "rating": 4.2,
+      "desiredRole": "Counselor",
+      "profileImage": "https://i.pinimg.com/564x/8d/b7/f6/8db7f6a91935bc5bbfd84a71fefcfd18.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Daniel Zamora",
+      "degree": "Bachelor of Science in Construction Management",
+      "rating": 4.3,
+      "desiredRole": "UI/UX Designer",
+      "profileImage": "https://i.pinimg.com/564x/52/d6/c9/52d6c9815d604af110f7a16675b566fe.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Matthew Espinoza",
+      "degree": "Bachelor of Science in Criminal Justice",
+      "rating": 4.5,
+      "desiredRole": "Legal Consultant",
+      "profileImage": "https://i.pinimg.com/564x/03/cd/da/03cddabe0a19f1b4c929d8fae2ad9351.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Benjamin Padilla",
+      "degree": "Bachelor of Science in Hospitality Management",
+      "rating": 4.4,
+      "desiredRole": "HR Manager",
+      "profileImage": "https://i.pinimg.com/564x/93/f4/0e/93f40ec756290812571be534e12bcfe7.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Jacob Santiago",
+      "degree": "Bachelor of Science in Urban Planning",
+      "rating": 4.2,
+      "desiredRole": "Data Analytics",
+      "profileImage": "https://i.pinimg.com/564x/d0/cb/d1/d0cbd1380c72ddf3750c896433b2dea1.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Michael Ramos",
+      "degree": "Bachelor of Science in Electrical Engineering",
+      "rating": 4.3,
+      "desiredRole": "Frontend Developer",
+      "profileImage": "https://i.pinimg.com/564x/07/33/ba/0733ba760b29378474dea0fdbcb97107.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Daniel Herrera",
+      "degree": "Bachelor of Science in Environmental Science",
+      "rating": 4.5,
+      "desiredRole": "Environmental Consultant",
+      "profileImage": "https://i.pinimg.com/564x/ae/9b/ae/ae9bae263ed27be66a775eff13e603c5.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Alexander Sanchez",
+      "degree": "Bachelor of Science in Urban Planning",
+      "rating": 4.1,
+      "desiredRole": "Urban Planner",
+      "profileImage": "https://i.pinimg.com/564x/91/21/f2/9121f2b3c557192b6fcd234782a7c399.jpg"
+    },
+    {
+      "id": 36,
+      "name": "William Torres",
+      "degree": "Bachelor of Science in Electrical Engineering",
+      "rating": 4.8,
+      "desiredRole": "Electrical Engineer",
+      "profileImage": "https://i.pinimg.com/564x/ed/63/46/ed63467e6ecc7e2064844a7d33099b97.jpg"
+    },
+    {
+      "id": 37,
+      "name": "Sophia Rivera",
+      "degree": "Bachelor of Arts in Art History",
+      "rating": 4.2,
+      "desiredRole": "Art Historian",
+      "profileImage": "https://i.pinimg.com/564x/24/91/0f/24910f726e8e849d73ba395a584181f0.jpg"
+    }
   ]
 }
