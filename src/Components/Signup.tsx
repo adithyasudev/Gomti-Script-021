@@ -1,11 +1,26 @@
 import React from 'react'
-import { Button, Input, InputGroup, InputLeftAddon, Stack } from '@chakra-ui/react'
 import PasswordInput from './Password'
 import Email from './Email'
+import {
+  Stack,
+  Input,
+  InputGroup,
+  Button,
+  InputLeftAddon,
+} from '@chakra-ui/react'
+
+
+interface userDetail{
+  
+}
 const Signup = () => {
+
+ 
+
   return (
    <>
     <Stack spacing={5}>
+      
     <Stack spacing={1}>
     <label>Enter your Full-Name</label>
     <Input  placeholder='Enter your full Name' />
@@ -20,11 +35,13 @@ const Signup = () => {
     </Stack>
     <PasswordInput />
   
-    <Button colorScheme='teal' variant='solid'>
+    <Button colorScheme='teal' variant='solid' >
     SIGNUP
-    </Button>
+    </Button>   
    </Stack>
 
+   
+   
    </>
   )
 }

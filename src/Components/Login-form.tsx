@@ -32,7 +32,7 @@ import Signup from "./Signup"
         >
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Create your account</ModalHeader>
+            <ModalHeader>Login/ Signup</ModalHeader>
             <ModalCloseButton />
             <ModalBody pb={6}>
             <Tabs variant='soft-rounded' colorScheme='blue'>

@@ -1,10 +1,10 @@
 import React from 'react'
 import Bluebox from './Bluebox'
-
+import Style from './Sartik.module.css'
 const Mobileapp = () => {
   return (
-    <div style={{display:'flex', justifyContent:'space-evenly'  }}>
-      <div ><img src="https://convextech.com/wp-content/uploads/2022/07/Group-7506.png" alt="" /></div>
+    <div style={{display:'flex', justifyContent:'space-evenly'  }} className={Style.divh}>
+      <div ><img src="https://convextech.com/wp-content/uploads/2022/07/Group-7506.png" alt="" className={Style.scaleimage}/></div>
       <div style={{display:'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
         <Bluebox />
         <div>

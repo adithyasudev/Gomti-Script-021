@@ -1,11 +1,12 @@
 import React from 'react'
 import Bluebox from './Bluebox'
+import Style from './Sartik.module.css'
 
 const Uiuxdesign = () => {
   return (
-    <div style={{display:'flex', justifyContent:'space-evenly'  }}>
-      <div ><img src="https://convextech.com/wp-content/uploads/2022/07/CyberMart-1.png" alt="" /></div>
-      <div style={{display:'flex', flexDirection:'column', justifyContent:'space-evenly'}}>
+    <div style={{display:'flex', justifyContent:'space-evenly'  }} className={Style.divh}>
+      <div ><img src="https://convextech.com/wp-content/uploads/2022/07/CyberMart-1.png" alt="" className={Style.scaleimage}/></div>
+      <div style={{display:'flex', flexDirection:'column', justifyContent:'space-evenly'}} className={Style.webdevpart1}>
         <Bluebox />
         <div>
         <p style={{fontSize:'30px', color:'darkblue' ,fontWeight:'bolder'}}> UI/UX  Design</p>
