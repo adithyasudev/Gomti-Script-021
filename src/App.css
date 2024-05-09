@@ -5,3 +5,13 @@
   text-align: center;
 } */
 
+.animated-text {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.animated {
+  transform: translateY(0);
+  opacity: 1;
+}
