@@ -639,6 +639,71 @@
       "total_reviews": 47,
       "rate_per_hour": 51
     }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "title": "React Js Developer",
+      "type": "Full-Time",
+      "description": "You’ll be expected to lead the company’s entire react js developers. You’ve to work on.",
+      "requirements": ["Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model", "Thorough understanding of React.js and its core principles", "Experience with popular React.js workflows (such as Flux or Redux)", "Familiarity with newer specifications of EcmaScript", "Experience with data structure libraries (e.g., Immutable.js)", "Knowledge of isomorphic React is a plus", "Familiarity with RESTful APIs", "Familiarity with modern front-end build pipelines and tools", "Experience with common front-end development tools such as Babel, Webpack, NPM, etc.", "Ability to understand business requirements and translate them into technical requirements"]
+    },
+    {
+      "id": 2,
+      "title": "Digital Marketing Lead",
+      "type": "Full-Time",
+      "description": "Digital Marketing Manager acts as a digital expert and will be playing a key role.",
+      "requirements": ["Proven working experience in digital marketing", "Demonstrable experience leading and managing SEO/SEM, marketing database, email, social media, and/or display advertising campaigns", "Highly creative with experience in identifying target audiences and devising digital campaigns that engage, inform, and motivate", "Solid knowledge of website analytics tools (e.g., Google Analytics, NetInsight, Omniture, WebTrends)", "Experience in setting up and optimizing Google Adwords campaigns", "Strong analytical skills and data-driven thinking", "Up-to-date with the latest trends and best practices in online marketing and measurement"]
+    },
+    {
+      "id": 3,
+      "title": "Magento Developer",
+      "type": "Full-Time",
+      "description": "A Magento Developer is responsible for designing and developing robust.",
+      "requirements": ["Strong object-oriented programming knowledge", "Very good PHP knowledge", "Experience with the Zend Framework", "Experience with the Magento platform", "Experience with the Magento 2 platform is a plus", "Strong experience with the LAMP stack", "Experience with version control systems (e.g., Git, SVN)", "Experience with web services (SOAP, REST)"]
+    },
+    {
+      "id": 4,
+      "title": "DevOps Engineer",
+      "type": "Full-Time",
+      "description": "In this role, you’ll work collaboratively with software engineering to deploy, manage and troubleshoot staging and production systems.",
+      "requirements": ["Strong background in Linux/Unix Administration", "Experience with automation/configuration management using Ansible, Puppet, Chef, or an equivalent", "Experience with AWS cloud services", "Experience with Docker and Kubernetes", "Experience with monitoring systems (e.g., Nagios, Zabbix, Prometheus)", "Experience with CI/CD pipelines and tools (e.g., Jenkins, Travis CI, CircleCI)", "Solid scripting skills (e.g., shell scripts, Python, Ruby)", "Experience in Agile/Scrum methodologies"]
+    },
+    {
+      "id": 5,
+      "title": "Specialist Vendor Management",
+      "type": "Full-Time",
+      "description": "Identify and track vendor KPIs against daily, weekly and monthly targets",
+      "requirements": ["Proven experience in vendor management or similar role", "Strong analytical skills with the ability to collect, organize, analyze, and disseminate significant amounts of information with attention to detail and accuracy", "Excellent communication and interpersonal skills", "Proficiency in MS Office and vendor management software", "Ability to work well with tight deadlines in a fast-paced environment"]
+    },
+    {
+      "id": 6,
+      "title": "Node Js Developer",
+      "type": "Full-Time",
+      "description": "Writing reusable, testable, and efficient code. Develop new features and improve existing features of the software",
+      "requirements": ["Strong proficiency with JavaScript", "Knowledge of Node.js and frameworks available for it (such as Express.js)", "Understanding the nature of asynchronous programming and its quirks and workarounds", "Good understanding of server-side templating languages", "Good understanding of server-side CSS preprocessors", "Basic understanding of front-end technologies, such as HTML5, and CSS3", "Understanding accessibility and security compliance", "User authentication and authorization between multiple systems, servers, and environments", "Integration of multiple data sources and databases into one system", "Understanding fundamental design principles behind a scalable application"]
+    },
+    {
+      "id": 7,
+      "title": "UI/UX Designer",
+      "type": "Full-Time",
+      "description": "As a UI/UX Designer, you will be responsible for creating visually stunning and user-friendly interfaces for our web and mobile applications.",
+      "requirements": ["Proven experience as a UI/UX Designer or similar role", "Portfolio of design projects", "Proficiency in design software (e.g., Adobe XD, Sketch, Figma)", "Strong understanding of user-centered design principles", "Solid knowledge of responsive design techniques", "Ability to collaborate effectively with cross-functional teams", "Excellent communication skills", "Up-to-date knowledge of design trends and best practices"]
+    },
+    {
+      "id": 8,
+      "title": "Data Scientist",
+      "type": "Full-Time",
+      "description": "As a Data Scientist, you will analyze complex datasets to uncover valuable insights that drive business decisions and improve our products and services.",
+      "requirements": ["Advanced degree in Computer Science, Statistics, Mathematics, or related field", "Proven experience as a Data Scientist or similar role", "Proficiency in statistical analysis tools (e.g., R, Python)", "Experience with machine learning techniques and algorithms", "Strong problem-solving skills", "Excellent communication and presentation abilities", "Ability to work independently and in a team environment"]
+    },
+    {
+      "id": 9,
+      "title": "Product Manager",
+      "type": "Full-Time",
+      "description": "As a Product Manager, you will be responsible for defining the product vision, strategy, and roadmap. You will work closely with cross-functional teams to deliver innovative products that meet customer needs and drive business growth.",
+      "requirements": ["Proven experience as a Product Manager or similar role", "Strong understanding of product management principles and practices", "Excellent leadership and communication skills", "Ability to develop product strategy and roadmap", "Experience with Agile development methodologies", "Ability to prioritize and manage multiple projects simultaneously", "Strong analytical and problem-solving skills", "Passion for building great products"]
+    }
   ]
 
 }
