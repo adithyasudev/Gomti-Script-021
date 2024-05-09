@@ -6,13 +6,20 @@
       "number": "6897967568",
       "email": "tusharbisht0216@gmail.com",
       "password": "tushar123"
+    },
+    {
+      "id": "2",
+      "name": "Tushar Bisht",
+      "number": "6897967568",
+      "email": "tusharbisht0216@gmail.com",
+      "password": "tushar123"
     }
   ],
   "admin": [
     {
       "id": "1",
       "username": "admin",
-      "password": "admin"
+      "password": "admin1234"
     }
   ],
 
@@ -313,5 +320,325 @@
       "desiredRole": "Art Historian",
       "profileImage": "https://i.pinimg.com/564x/24/91/0f/24910f726e8e849d73ba395a584181f0.jpg"
     }
+  ],
+  "events":[
+  {
+    "id":"1",
+   "title":"Birthday Party Celebration",
+   "discription":"March 18, 2020",
+   "image":"https://picjj.com/image/Birthday-party.sq1BP"
+  },{
+    "id":"2",
+   "title":"Office view",
+   "discription":"March 18, 2020 ",
+   "image":"https://picjj.com/image/Office-view.sqean"
+  },
+  {
+    "id":"3",
+   "title":"",
+   "discription":"March 18, 2020",
+   "image":"https://picjj.com/image/Annual-Dinner.sq6c1"
+  },
+  {
+    "id":"4",
+   "title":"CyberMart A Project of Convex",
+   "discription":"March 18, 2020",
+   "image":"https://picjj.com/image/Cyber-trunk.sqCto"
+  },
+  {
+    "id":"5",
+   "title":"Travel To Abroad",
+   "discription":"March 18, 2020",
+   "image":"https://picjj.com/images/2024/05/09/sqjiA.jpg"
+  },
+  {
+    "id":"6",
+   "title":"Managing remote employees",
+   "discription":"March 18, 2020",
+   "image":"https://picjj.com/images/2024/05/09/sqJRe.png"
+  }
+  ],
+  "freelancers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "skills": ["Web Development", "JavaScript", "React", "Node.js"],
+      "rating": 4.8,
+      "total_reviews": 56,
+      "rate_per_hour": 40
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "skills": ["Graphic Design", "Adobe Illustrator", "Adobe Photoshop"],
+      "rating": 4.9,
+      "total_reviews": 72,
+      "rate_per_hour": 35
+    },
+    {
+      "id": 3,
+      "name": "Alex Johnson",
+      "skills": ["Mobile App Development", "iOS", "Swift", "Android", "Java"],
+      "rating": 4.7,
+      "total_reviews": 40,
+      "rate_per_hour": 50
+    },
+    {
+      "id": 4,
+      "name": "Emily Brown",
+      "skills": ["Content Writing", "Copywriting", "SEO"],
+      "rating": 4.6,
+      "total_reviews": 65,
+      "rate_per_hour": 25
+    },
+    {
+      "id": 5,
+      "name": "Michael Wilson",
+      "skills": ["Digital Marketing", "Social Media Management", "Google Analytics"],
+      "rating": 4.5,
+      "total_reviews": 48,
+      "rate_per_hour": 45
+    },
+    {
+      "id": 6,
+      "name": "Sarah Johnson",
+      "skills": ["Web Development", "PHP", "MySQL", "Laravel"],
+      "rating": 4.6,
+      "total_reviews": 38,
+      "rate_per_hour": 42
+    },
+    {
+      "id": 7,
+      "name": "David Lee",
+      "skills": ["Graphic Design", "Adobe Photoshop", "Illustrator", "InDesign"],
+      "rating": 4.8,
+      "total_reviews": 50,
+      "rate_per_hour": 38
+    },
+    {
+      "id": 8,
+      "name": "Emma White",
+      "skills": ["Content Writing", "Blogging", "Copywriting"],
+      "rating": 4.7,
+      "total_reviews": 55,
+      "rate_per_hour": 28
+    },
+    {
+      "id": 9,
+      "name": "Chris Anderson",
+      "skills": ["Mobile App Development", "React Native", "Firebase"],
+      "rating": 4.9,
+      "total_reviews": 60,
+      "rate_per_hour": 48
+    },
+    {
+      "id": 10,
+      "name": "Olivia Brown",
+      "skills": ["SEO", "SEM", "Keyword Research"],
+      "rating": 4.5,
+      "total_reviews": 45,
+      "rate_per_hour": 30
+    },
+    {
+      "id": 11,
+      "name": "James Smith",
+      "skills": ["Web Development", "HTML", "CSS", "Bootstrap"],
+      "rating": 4.8,
+      "total_reviews": 42,
+      "rate_per_hour": 36
+    },
+    {
+      "id": 12,
+      "name": "Sophia Wilson",
+      "skills": ["Graphic Design", "UI/UX Design", "Sketch"],
+      "rating": 4.6,
+      "total_reviews": 58,
+      "rate_per_hour": 40
+    },
+    {
+      "id": 13,
+      "name": "Ethan Martinez",
+      "skills": ["Digital Marketing", "Content Strategy", "Email Marketing"],
+      "rating": 4.7,
+      "total_reviews": 47,
+      "rate_per_hour": 44
+    },
+    {
+      "id": 14,
+      "name": "Ava Taylor",
+      "skills": ["Mobile App Development", "Flutter", "Dart"],
+      "rating": 4.8,
+      "total_reviews": 63,
+      "rate_per_hour": 52
+    },
+    {
+      "id": 15,
+      "name": "Noah Garcia",
+      "skills": ["Content Writing", "Technical Writing", "Article Writing"],
+      "rating": 4.9,
+      "total_reviews": 68,
+      "rate_per_hour": 32
+    },
+    {
+      "id": 16,
+      "name": "Isabella Lopez",
+      "skills": ["SEO", "Content Optimization", "Link Building"],
+      "rating": 4.6,
+      "total_reviews": 51,
+      "rate_per_hour": 27
+    },
+    {
+      "id": 17,
+      "name": "William Moore",
+      "skills": ["Web Development", "Python", "Django"],
+      "rating": 4.7,
+      "total_reviews": 44,
+      "rate_per_hour": 47
+    },
+    {
+      "id": 18,
+      "name": "Mia Clark",
+      "skills": ["Graphic Design", "Logo Design", "Brand Identity"],
+      "rating": 4.8,
+      "total_reviews": 59,
+      "rate_per_hour": 33
+    },
+    {
+      "id": 19,
+      "name": "Benjamin Adams",
+      "skills": ["Digital Marketing", "PPC", "Google Ads"],
+      "rating": 4.5,
+      "total_reviews": 53,
+      "rate_per_hour": 46
+    },
+    {
+      "id": 20,
+      "name": "Chloe Parker",
+      "skills": ["Mobile App Development", "Ionic", "Angular"],
+      "rating": 4.6,
+      "total_reviews": 49,
+      "rate_per_hour": 55
+    },
+    {
+      "id": 21,
+      "name": "Liam Hernandez",
+      "skills": ["Web Development", "WordPress", "PHP"],
+      "rating": 4.7,
+      "total_reviews": 55,
+      "rate_per_hour": 37
+    },
+    {
+      "id": 22,
+      "name": "Charlotte Young",
+      "skills": ["Graphic Design", "Illustrator", "Photoshop"],
+      "rating": 4.9,
+      "total_reviews": 63,
+      "rate_per_hour": 41
+    },
+    {
+      "id": 23,
+      "name": "Mason Flores",
+      "skills": ["Mobile App Development", "React Native", "Java"],
+      "rating": 4.8,
+      "total_reviews": 57,
+      "rate_per_hour": 49
+    },
+    {
+      "id": 24,
+      "name": "Amelia Hall",
+      "skills": ["Content Writing", "Copywriting", "Blogging"],
+      "rating": 4.6,
+      "total_reviews": 50,
+      "rate_per_hour": 29
+    },
+    {
+      "id": 25,
+      "name": "Logan Russell",
+      "skills": ["Digital Marketing", "Social Media Marketing", "SEO"],
+      "rating": 4.7,
+      "total_reviews": 48,
+      "rate_per_hour": 43
+    },
+    {
+      "id": 26,
+      "name": "Evelyn Walker",
+      "skills": ["Web Development", "JavaScript", "Vue.js"],
+      "rating": 4.9,
+      "total_reviews": 52,
+      "rate_per_hour": 39
+    },
+    {
+      "id": 27,
+      "name": "Sebastian Martinez",
+      "skills": ["Graphic Design", "Logo Design", "Illustrator"],
+      "rating": 4.8,
+      "total_reviews": 46,
+      "rate_per_hour": 36
+    },
+    {
+      "id": 28,
+      "name": "Avery Perez",
+      "skills": ["Content Writing", "SEO Writing", "Technical Writing"],
+      "rating": 4.7,
+      "total_reviews": 53,
+      "rate_per_hour": 31
+    },
+    {
+      "id": 29,
+      "name": "Harper Campbell",
+      "skills": ["Mobile App Development", "iOS", "Swift"],
+      "rating": 4.6,
+      "total_reviews": 49,
+      "rate_per_hour": 47
+    },
+    {
+      "id": 30,
+      "name": "Jackson Ramirez",
+      "skills": ["SEO", "SEM", "Google Analytics"],
+      "rating": 4.5,
+      "total_reviews": 44,
+      "rate_per_hour": 34
+    },
+    {
+      "id": 31,
+      "name": "Luna Flores",
+      "skills": ["Web Development", "React", "Node.js"],
+      "rating": 4.8,
+      "total_reviews": 58,
+      "rate_per_hour": 42
+    },
+    {
+      "id": 32,
+      "name": "Leo Ward",
+      "skills": ["Graphic Design", "Illustrator", "InDesign"],
+      "rating": 4.7,
+      "total_reviews": 47,
+      "rate_per_hour": 38
+    },
+    {
+      "id": 33,
+      "name": "Nova Gonzalez",
+      "skills": ["Content Writing", "Copywriting", "SEO"],
+      "rating": 4.9,
+      "total_reviews": 61,
+      "rate_per_hour": 26
+    },
+    {
+      "id": 34,
+      "name": "Mateo Diaz",
+      "skills": ["Digital Marketing", "Social Media Management", "Facebook Ads"],
+      "rating": 4.8,
+      "total_reviews": 54,
+      "rate_per_hour": 45
+    },
+    {
+      "id": 35,
+      "name": "Zoe Torres",
+      "skills": ["Mobile App Development", "Android", "Java"],
+      "rating": 4.6,
+      "total_reviews": 47,
+      "rate_per_hour": 51
+    }
   ]
+
 }
