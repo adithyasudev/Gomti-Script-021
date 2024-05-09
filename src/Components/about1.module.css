@@ -1,0 +1,220 @@
+.upper {
+    width: 100%;
+    background-image: url("https://picjj.com/images/2024/05/09/pzhp7.png");
+    background-size: cover; 
+    height: 200px; 
+    width: 100%; 
+  }
+  
+  .about1 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    position:absolute;
+    top: 120px;
+    left: 250px;
+    font-size: xx-large;
+    animation: scaleAnimation 1.5s ease forwards; 
+    animation-delay: 1s;
+  }
+  @keyframes scaleAnimation {
+    from {
+        transform: scale(0.5);
+      }
+      to {
+        transform: scale(1); 
+      }
+  }
+
+   /* About 1 ended */
+ 
+  /* About 2 is statred  */
+   
+
+ .about2 {
+    display: flex;
+    width: 90%;
+    margin-left: 4rem;
+    position: relative; /* Added for positioning */
+  }
+  
+  .h1 {
+    color: rgb(2, 10, 100);
+    text-align: left;
+    margin-left: 40px;
+    animation: slideInLeft 1.5s ease forwards; /* Animation for heading */
+    animation-delay: 1s;
+  }
+  
+  .p {
+    color: rgb(0, 1, 11);
+    text-align: left;
+    margin-left: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: slideInBottom 1.5s ease forwards; /* Animation for paragraph */
+    animation-delay: 1.5s; /* Delay paragraph animation */
+  }
+  
+  .img {
+    width: 50vh;
+    margin-right: 40px;
+    margin-top: 30px;
+    transform: scale(0.5); /* Initial scale for image */
+    animation: scaleAnimation 1.5s ease forwards; /* Animation for image */
+    animation-delay: 1s; /* Delay image animation */
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleAnimation {
+    from {
+      transform: scale(-0.5);
+    }
+    to {
+      transform: scale(1);
+  }
+}
+
+
+ /* About 2 ended */
+ 
+  /* About 3 is statred  */
+  .about3 {
+    width: 90%;
+    margin-left: 4rem;
+  }
+  
+  /* Styling for the h2 headings */
+  .h2 {
+    color: rgb(2, 10, 100);
+    text-align: left;
+    margin-left: 40px;
+    animation: slideInLeft 1.5s ease forwards;
+    animation-delay: 1s;
+  }
+  
+  /* Styling for the span elements */
+  .span {
+    color: rgb(20, 195, 218);
+  }
+  
+  /* Styling for the p2 paragraphs */
+  .p2 {
+    color: rgb(0, 1, 11);
+    text-align: left; /* Added for alignment */
+    margin-left: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: slideInBottom 1.5s ease forwards;
+    animation-delay: 1.5s;
+  }
+  
+
+  /* About 3 ended */
+ 
+  /* About 4 is statred  */
+
+  .about4 {
+    width: 90%;
+    margin-left: 8%;
+  }
+  
+  .collage {
+    display: grid;
+    
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .team {
+    margin-top: 50px;
+    color: rgb(4, 4, 120);
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  
+  .collageitem {
+    margin-top: 10px;
+    width: 100px;
+    position: relative;
+    
+  }
+  
+  .collageitemimg {
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 10px;
+    border-radius: 150px 150px 0px 0px; 
+  }
+
+  
+  .teamsocial{
+    display: flex;
+    justify-content: space-around;
+     gap: 20px;
+  }
+  .teaminfo {
+    
+    width: 30vh;
+    height: 30vh;
+    background: rgba(140, 151, 238, 0.8); 
+    border-radius: 150px 150px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+   
+   
+  }
+  @keyframes slideInnBottom {
+    from {
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .collageitem:hover .teaminfo {
+    opacity: 1;
+      animation: slideInnBottom 1.5s ease forwards;  
+     animation-delay: 0s;   
+  }
+   /* About 4 ended */
+ 
+  /* About 5 is statred  */
+  .about5{
+    height: 20vh;
+    background-color: rgb(181, 180, 180);
+  }
+  .p5{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 500px;
+  }
+  
