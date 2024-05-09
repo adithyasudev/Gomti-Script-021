@@ -2,6 +2,7 @@
 
 import './App.css'
 import  InitialFocus from './Components/Login-form'
+import Portfolio from './Pages/Portfolio'
 
 function App() {
   
@@ -10,6 +11,8 @@ function App() {
     <>
       <p>Hello</p>
       <InitialFocus />
+      <Portfolio /> //Portfolio page 
+      
     </>
   )
 }
