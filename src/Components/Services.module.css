@@ -1,0 +1,18 @@
+.services{
+    margin-top: auto;
+    margin-bottom: auto;
+    /* background-color: rgb(0, 255, 170); */
+    width:30vw; 
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    padding-top: 12vh;
+   padding-left: 8vw;
+    color: white;
+    font-weight: bolder;
+    width:100vw;
+     height: 250px;
+     background-color: rgba(0, 50, 126, 0.664);
+
+}
