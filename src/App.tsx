@@ -1,16 +1,19 @@
 
 
+import './App.css'
 
-import Navbar from './Components/Footer'
-
+import Career from './Components/Career'
+// import Navbar from './Components/Footer'
 
 function App() {
   
 
   return (
     <>
+      
+      {/* <Navbar/> */}
      
-      <Navbar/>
+      <Career/>
       
     </>
   )
