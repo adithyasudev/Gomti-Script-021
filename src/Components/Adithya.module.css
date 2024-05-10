@@ -1,0 +1,23 @@
+.img040{
+    background-image: url(https://humanico.co/wp-content/uploads/2022/10/human-potential.png);
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-top: 12vh;
+}
+.flex{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+background-color: #ffffff#fff;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+}
+.container{
+margin-top: 10vh;
+background-color: #ffffff#fff;
+font-size: 30px;
+
+}
