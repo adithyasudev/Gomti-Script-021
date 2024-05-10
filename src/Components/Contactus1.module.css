@@ -12,4 +12,12 @@
   
   .location {
     width: 45%;
+
+
+  }
+
+  @media (max-width: 768px) {
+    .location {
+      width: 100%; /* Adjust width for smaller screens */
+    }
   }

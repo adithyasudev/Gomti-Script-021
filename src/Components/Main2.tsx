@@ -16,24 +16,25 @@ applications and mobile apps for clients all over the world.</p></div>
       <div className={style1.cardcontainer}>
 
           <div className={style1.cards}>
-            <h3>Epsum factorial non deposit quid pro quo hic escorol. <br />
+            <h2> "Epsum factorial non deposit quid pro quo hic escorol. <br />
           Olympian quarrels et gorilla congolium sic ad nauseum. <br />
           Souvlaki ignitus carborundum e pluribus unum. <br />
           Defacto lingo est igpay atinlay. Marquee selectus non <br />
-          provisio incongruous feline nolo contendre.
+          provisio incongruous feline nolo contendre."
           <br />
-          <h1 style={{color:'orange'}}>Tom Hiddleston</h1>
-          </h3>
+          <h1 style={{color:'orange'}}>Hiddleston</h1>
+          </h2>
           </div>
           <div className={style1.cards}>
-          <h3>Epsum factorial non deposit quid pro quo hic escorol. <br />
+          <h2>
+            "Epsum factorial non deposit quid pro quo hic escorol. <br />
           Olympian quarrels et gorilla congolium sic ad nauseum. <br />
           Souvlaki ignitus carborundum e pluribus unum. <br />
           Defacto lingo est igpay atinlay. Marquee selectus non <br />
-          provisio incongruous feline nolo contendre.
+          provisio incongruous feline nolo contendre."
           <br />
-          <h1 style={{color:'orange'}}>JaredLeto</h1>
-          </h3>
+          <h1 style={{color:'orange'}}>Leto</h1>
+          </h2>
           </div>
               </div>
       </div>
