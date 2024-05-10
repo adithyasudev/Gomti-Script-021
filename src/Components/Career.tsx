@@ -10,36 +10,48 @@ import CustomButton from "./button";
 const Career = () => {
   const isVisible = useScrollAnimation();
   return (
-    <Stack spacing={10}>
+    <>
+    <Stack spacing={2}>
       <div
         style={{
-          backgroundImage: "url(https://picjj.com/images/2024/05/09/sNPVP.png)",
+          backgroundImage: "url(https://convextech.com/wp-content/uploads/2022/07/hero-banner.png)",
           backgroundSize: "cover ",
           width: "100vw",
-          height: "500px",
+          height: "70vh",
           margin: "100",
         }}
       >
         <div className={Style.portfolio}>
           <Bluebox />
-          <h5 className={`animated-text ${isVisible ? "animated" : ""}`}>
-            <h2>
+          <div className={`animated-text ${isVisible ? "animated" : ""}`}>
+            <p style={{fontWeight: '400'}}>
               WORLD-CLASS PERFORMANCE SERVICES O HELP BRANDS GROW IN THE
               HYPERCONNECTED
-            </h2>
+            </p>
             <br/>
             <h5>
-              Imagine you don't need a degree, you don't need an office, you
-              don't need a team, you don't need prior experience and yet you can
-              learn, earn, achieve and accomplish far beyond your hopes and
+              Imagine you don't need a degree, you don't need an office,
+              <br/> you
+              don't need a team, you don't need prior
+              <br/> experience and yet you can
+              learn, earn, achieve and 
+              <br/> accomplish far beyond your hopes and
               expectations.
             </h5>
             <br/>
            <CustomButton/>
-          </h5>
+          </div>
         </div>
       </div>
+      
     </Stack>
+
+
+  
+   
+
+    
+   </>
   );
 };
 

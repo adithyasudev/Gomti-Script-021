@@ -3,6 +3,7 @@
 import './App.css'
 
 import Career from './Components/Career'
+import Footer from './Components/Footer'
 // import Navbar from './Components/Footer'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       {/* <Navbar/> */}
      
       <Career/>
+      <Footer/>
       
     </>
   )
