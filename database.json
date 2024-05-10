@@ -9,16 +9,36 @@
     },
     {
       "id": "2",
-      "name": "Tushar Bisht",
+      "name": "Sartik Kumar",
       "number": "6897967568",
-      "email": "tusharbisht0216@gmail.com",
-      "password": "tushar123"
+      "email": "sartikkumar@gmail.com",
+      "password": "Sartik123"
+    }, {
+      "id": "3",
+      "name": "Sourabh Rawat",
+      "number": "6897967568",
+      "email": "sourabhrawat@gmail.com",
+      "password": "sourabh123"
+    },
+    {
+      "id": "4",
+      "name": "Kajal Kumari",
+      "number": "6897967568",
+      "email": "kajalkumari123@gmail.com",
+      "password": "kajal123"
+    },
+    {
+      "id": "5" ,
+      "name": "Aditya Sudev",
+      "number": "6897967568",
+      "email": "adityasudev@gmail.com",
+      "password": "adityasudev"
     }
   ],
   "admin": [
     {
       "id": "1",
-      "username": "admin",
+      "email": "admin",
       "password": "admin1234"
     }
   ],
