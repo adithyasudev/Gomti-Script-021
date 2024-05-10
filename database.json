@@ -346,24 +346,24 @@
     "id":"1",
    "title":"Birthday Party Celebration",
    "discription":"March 18, 2020",
-   "image":"https://picjj.com/image/Birthday-party.sq1BP"
+   "image":"https://picjj.com/images/2024/05/09/sq1BP.png"
   },{
     "id":"2",
    "title":"Office view",
    "discription":"March 18, 2020 ",
-   "image":"https://picjj.com/image/Office-view.sqean"
+   "image":"https://picjj.com/images/2024/05/09/sqean.png"
   },
   {
     "id":"3",
    "title":"",
    "discription":"March 18, 2020",
-   "image":"https://picjj.com/image/Annual-Dinner.sq6c1"
+   "image":"https://picjj.com/images/2024/05/09/sq6c1.jpg"
   },
   {
     "id":"4",
    "title":"CyberMart A Project of Convex",
    "discription":"March 18, 2020",
-   "image":"https://picjj.com/image/Cyber-trunk.sqCto"
+   "image":"https://picjj.com/images/2024/05/09/sqCto.jpg"
   },
   {
     "id":"5",
@@ -723,6 +723,86 @@
       "type": "Full-Time",
       "description": "As a Product Manager, you will be responsible for defining the product vision, strategy, and roadmap. You will work closely with cross-functional teams to deliver innovative products that meet customer needs and drive business growth.",
       "requirements": ["Proven experience as a Product Manager or similar role", "Strong understanding of product management principles and practices", "Excellent leadership and communication skills", "Ability to develop product strategy and roadmap", "Experience with Agile development methodologies", "Ability to prioritize and manage multiple projects simultaneously", "Strong analytical and problem-solving skills", "Passion for building great products"]
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Web Design",
+      "description": "Engrossed listening. Park gate sell they west hard for the.",
+      "svg": "https://picjj.com/images/2024/05/10/Figt1.png"
+    },
+    {
+      "id": 2,
+      "name": "Staffing",
+      "description": "Empower Your Workforce with the Right Talent",
+      "svg": "https://picjj.com/images/2024/05/10/FitHR.png"
+    },
+    {
+      "id": 3,
+      "name": "Recruiting",
+      "description": "We are attracting candidates for jobs and matching them to the right one",
+      "svg": "https://picjj.com/images/2024/05/10/FizVn.png"
+    },
+    {
+      "id": 4,
+      "name": "MSP",
+      "description": "Empowering Your Business, Simplifying IT Management: Your Future with Our Expertise",
+      "svg": "https://picjj.com/images/2024/05/10/Fi48Y.png"
+    },
+    {
+      "id": 5,
+      "name": "VMS",
+      "description": "Streamlining Vendor Management: Efficiency, Visibility, and Control at Your Fingertips",
+      "svg": "https://picjj.com/images/2024/05/10/FibRb.png"
+    },
+    {
+      "id": 6,
+      "name": "Government",
+      "description": "Building Stronger Communities: Trusted Services for a Brighter Tomorrow",
+      "svg": "https://picjj.com/images/2024/05/10/FikkP.png"
+    },
+    {
+      "id": 7,
+      "name": "Payroll Services",
+      "description": "Simplifying Payroll, Empowering People: Accurate, Timely, and Stress-Free",
+      "svg": "https://picjj.com/images/2024/05/10/Finaz.png"
+    },
+    {
+      "id": 8,
+      "name": "SEO Service",
+      "description": "Optimize your website, our mission is to put you on top",
+      "svg": "https://picjj.com/images/2024/05/10/Fiw6N.png"
+    },
+    {
+      "id": 9,
+      "name": "Digital Marketing",
+      "description": "The powerhouse of digital marketing solutions, with excellent ideas for fast growth",
+      "svg": "https://picjj.com/images/2024/05/10/Fi48Y.png"
+    },
+    {
+      "id": 10,
+      "name": "Quality Assurance",
+      "description": "We are focused on providing confidence that quality requirements will be fulfilled",
+      "svg": "https://picjj.com/images/2024/05/10/FiggX.png"
+    },
+    {
+      "id": 11,
+      "name": "Software Development",
+      "description": "Innovate, Develop, Succeed: Crafting Your Future with Cutting-Edge Solutions",
+      "svg": "https://picjj.com/images/2024/05/10/FizVn.png"
+    },
+    {
+      "id": 12,
+      "name": "Global Tech Recruitment",
+      "description": "ConvexTech has years of experience in recruiting tech talent worldwide.",
+      "svg": "https://picjj.com/images/2024/05/10/FikkP.png"
+    },
+    {
+      "id": 13,
+      "name": "Technical Interviews",
+      "description": "We conduct highly technical interviews to bring efficiency to the hiring process",
+      "svg": "https://picjj.com/images/2024/05/10/Finaz.png"
     }
   ]
 
