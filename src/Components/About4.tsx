@@ -4,7 +4,7 @@ import tushar from './images/tushar.jpg'
   import adityas from './images/AdityaS.jpg'
   import kajakk from './images/kajalk.jpg'
   import sourav from './images/sourav.jpg'
-  import { useEffect } from 'react';
+  
 
 export const About4 = () => {
 

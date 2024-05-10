@@ -42,7 +42,7 @@
     color: rgb(2, 10, 100);
     text-align: left;
     margin-left: 40px;
-    animation: slideInLeft 1.5s ease forwards; /* Animation for heading */
+    animation: slideInLeft 1.5s ease forwards; 
     animation-delay: 1s;
   }
   
@@ -51,17 +51,17 @@
     text-align: left;
     margin-left: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    animation: slideInBottom 1.5s ease forwards; /* Animation for paragraph */
-    animation-delay: 1.5s; /* Delay paragraph animation */
+    animation: slideInBottom 1.5s ease forwards; 
+    animation-delay: 1.5s; 
   }
   
   .img {
     width: 50vh;
     margin-right: 40px;
     margin-top: 30px;
-    transform: scale(0.5); /* Initial scale for image */
-    animation: scaleAnimation 1.5s ease forwards; /* Animation for image */
-    animation-delay: 1s; /* Delay image animation */
+    transform: scale(0.5); 
+    animation: scaleAnimation 1.5s ease forwards;
+    animation-delay: 1s; 
   }
   
   @keyframes slideInLeft {
@@ -218,3 +218,33 @@
     margin-left: 500px;
   }
   
+  /* media queary */
+  @media only screen and (max-width: 768px) {
+    .about1 {
+      left: 50%;
+      transform: translateX(-50%); 
+    }
+  
+    .about2 .h1,
+    .about2 .p {
+      margin-left: 0; 
+      text-align: center; 
+    }
+  
+    .about2 .img {
+      margin-right: 0; 
+    }
+  
+    .about3 .h2,
+    .about3 .p2 {
+      margin-left: 0; 
+      text-align: center; 
+    }
+  
+    .about4 {
+      width: 100%; 
+      margin-left: 0;
+      margin-right: 0; 
+      
+    }
+  }
