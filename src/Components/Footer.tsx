@@ -15,7 +15,7 @@ const Footer = () => {
         style={{
           backgroundColor: "white",
           marginTop: "20px",
-          marginLeft: "80px",
+          // marginLeft: "80px",
 
         }}
       >

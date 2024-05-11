@@ -6,8 +6,10 @@
 // import { ContactUs1 } from './Components/ContactUs1'
 
 import './App.css'
-// import Bluebox from './Components/Bluebox'
-// import Services from './pages/Services'
+import Navbar from './Components/Navbar'
+import AdminDashboard from './pages/AdminDashboard'
+import Services from './pages/Services'
+
 
 // function App() {
   
@@ -24,14 +26,24 @@ import './App.css'
 // src/App.tsx
 import './App.css';
 import { ContactUs } from './pages/ContactUs';
+import CareerPage from './pages/CareerPage';
+import Events from './pages/Events';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Footer from './Components/Footer';
+import { Route, Routes } from 'react-router';
 function App() {
   return (
-
-    <ContactUs />
-
-  );
-
-
+    <>
+<Routes>
+<Route path="./" />
+<Route path="./" />
+<Route path="./" />
+<Route path="./" />
+<Route path="./" />
+</Routes>
+    </>
+  )
 }
 
 export default App;
