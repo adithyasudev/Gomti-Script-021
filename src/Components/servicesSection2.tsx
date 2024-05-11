@@ -1,12 +1,15 @@
 import { color } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import useScrollAnimation from '../customHooks/animation'
 
-const ServicesSection2 = ({children}) => {
+const ServicesSectioninner2= ({children}) => {
+
+  let isVisible = useScrollAnimation();
   return (
-    <div style={ {backgroundColor:"#25abe2", width: "200px" , height:"150px", color:'white', borderRadius:"10px"}}>
+    <div className={ `animated-text ${isVisible? "animated":""}`} style={ {backgroundColor:"white", width: "230px" , height:"auto", color:'black', borderRadius:"10px", padding:"30px"}}>
     {children}
     </div>
   )
 }
 
-export default ServicesSection2
+export default ServicesSectioninner2
