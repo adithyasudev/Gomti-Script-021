@@ -1,6 +1,5 @@
 
 import style1 from './Adithya2.module.css'
-import { color } from '@chakra-ui/react'
 export const Main2 = () => {
   return (
     <>

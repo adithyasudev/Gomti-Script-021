@@ -23,17 +23,12 @@ import './App.css'
 // export default App
 // src/App.tsx
 import './App.css';
-import Contactus1 from './Components/ContactUs1';
-import { Main1 } from './Components/Main1';
-import { Main2 } from './Components/Main2';
+import { ContactUs } from './pages/ContactUs';
 function App() {
   return (
 
-    <div className="App">
-      <Contactus1 />
-      <Main1 />
-      <Main2 />
-    </div>
+    <ContactUs />
+
   );
 
 
