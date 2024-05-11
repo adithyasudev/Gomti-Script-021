@@ -208,7 +208,7 @@ export const Location = () => {
             <Card className="location" style={{
               backgroundColor: '#fafafa',
               border: '1px solid',
-              borderRadius: '6px',
+              borderRadius: '7px',
               boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'
             }}>
               <CardHeader>
