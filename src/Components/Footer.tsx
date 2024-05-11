@@ -103,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p style={{ marginTop: "40px", marginLeft: "65px" }}>
+          <p style={{ marginTop: "40px", marginLeft: "30px" }}>
             ConvexTech is operated by ConvexTech Insight Pvt Ltd. Copyright 2020 -
             All right Recived
           </p>

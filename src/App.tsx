@@ -1,5 +1,4 @@
 
-
 import './App.css'
 import Career from './Components/Career'
 
@@ -24,5 +23,6 @@ function App() {
     </>
   )
 }
+
 
 export default App
