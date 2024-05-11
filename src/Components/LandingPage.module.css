@@ -1,0 +1,21 @@
+.portfolio{
+    
+    width:50vw;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: auto;
+    padding-top:20vh;
+   padding-left: 8vw;
+    color: white;
+    font-weight: bolder;
+    width:100vw;
+     height: 70vh;
+     background-color: #084db473;
+     
+
+
+}
+
+

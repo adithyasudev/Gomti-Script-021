@@ -1,7 +1,9 @@
 
 import {  NavLink } from 'react-router-dom'
 import Styles from './Navlink.module.css'
+import InitialFocus from './Login-form'
 const Navbar = () => {
+    
   return (
 
     <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5"}}>
@@ -17,7 +19,7 @@ const Navbar = () => {
         <NavLink  className={Styles.navbarlink} to="./">Events</NavLink>
         <NavLink  className={Styles.navbarlink} to="./">Contact us</NavLink>
     </div>
-    <button>login</button>
+  <InitialFocus/>
     </div>
    
   )
