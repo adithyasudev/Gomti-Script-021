@@ -1,10 +1,12 @@
 
 
 import './App.css'
-
 import Career from './Components/Career'
+
+
 import Footer from './Components/Footer'
-import Landing from './Components/Landing'
+import LandingPage from './Components/LandingPage'
+
 // import Navbar from './Components/Footer'
 
 function App() {
@@ -15,9 +17,9 @@ function App() {
       
       {/* <Navbar/> */}
      
-      <Career/>
+      <LandingPage/>
       <Footer/>
-      <Landing/>
+      <Career/>
       
     </>
   )
