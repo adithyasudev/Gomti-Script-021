@@ -1,14 +1,25 @@
 
 import './App.css'
-import Portfolio1 from './Components/Portfolio1'
-import InitialFocus from './Components/Login-form'
+import Career from './Components/Career'
+
+
+import Footer from './Components/Footer'
+import LandingPage from './Components/LandingPage'
+
+// import Navbar from './Components/Footer'
+
 function App() {
   
 
   return (
     <>
-    <InitialFocus />
-    <Portfolio1 />
+      
+      {/* <Navbar/> */}
+     
+      <LandingPage/>
+      <Footer/>
+      <Career/>
+      
     </>
   )
 }
