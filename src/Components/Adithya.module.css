@@ -42,20 +42,46 @@ font-size: 30px;
 
 }
 
-.Location{
-background-color: white;
-width: 100vw;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-/* padding-left: 40px; */
-height: 50vh;
+
+/* .Location {
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 50vh;
 }
 
-.loc{
+.loc {
   font-size: 80px;
 }
-.loct{
-background-color:white;
-margin-left: 11vw;
+
+.loct {
+  background-color: white;
+  margin-left: 11vw;
 }
+
+@media screen and (max-width: 768px) {
+  .loct {
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loct {
+    margin-left: 2vw;
+  }
+}
+.cardBodyText{
+  @media screen and (max-width: 768px) {
+    .cardBodyText {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .cardBodyText {
+      font-size: 14px;
+    }
+  }
+} */
