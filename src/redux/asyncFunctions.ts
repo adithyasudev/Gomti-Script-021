@@ -3,11 +3,11 @@ import axios from "axios";
 
 
 import { adminFailure, adminRequest,  adminSuccess,  loginFailure, loginRequest, loginSuccess } from "./reducers";
-import { User } from "./types";
+import { ActionTypes, User } from "./types";
 import { Dispatch } from "redux";
 
 export interface Actiontype {
-  type: string;
+  type: ActionTypes.ADMIN_FAILURE | ActionTypes.ADMIN_REQUEST |ActionTypes.ADMIN_SUCCESS |ActionTypes.LOGIN_FAILURE |ActionTypes.LOGIN_REQUEST |ActionTypes.LOGIN_SUCCESS;
   payload?: User | string | null;
 }
 export interface jsonUser{
@@ -32,7 +32,7 @@ export const loginUser = (credentials:User) => async (dispatch:Dispatch<Actionty
 
     dispatch(loginRequest());
 
-    const response = await axios.post('/login', credentials);
+    const response = await axios.get('https://gomti-script-021.onrender.com/user');
    
     const user = response.data;
 let valid = false;
@@ -58,7 +58,7 @@ export const loginAdmin = (credentials:User) => async (dispatch:Dispatch<Actiont
 
     dispatch(adminRequest());
 
-    const response = await axios.get('');
+    const response = await axios.get('https://gomti-script-021.onrender.com/admin');
    
     const user = response.data;
 
