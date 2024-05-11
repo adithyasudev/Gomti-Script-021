@@ -1,0 +1,36 @@
+.services{
+    margin-top: auto;
+    margin-bottom: auto;
+    /* background-color: rgb(0, 255, 170); */
+    width:30vw; 
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    padding-top: 12vh;
+   padding-left: 8vw;
+    color: white;
+    font-weight: bolder;
+    width:100vw;
+     height: 250px;
+     background-color: rgba(0, 50, 126, 0.664);
+
+}
+
+  .hire{
+    background-size: cover;
+    background-position: center;
+    width: 340px ;
+     height:200px;
+     color:white;
+      border-radius:10px;
+       display: flex;
+        justify-content:center;
+         align-items:center;
+         font-weight:bold ; 
+         transition: background-size 0.5s ease-in;
+  }
+
+.hire:hover{
+    background-size: 105%;
+}

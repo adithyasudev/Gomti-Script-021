@@ -1,5 +1,5 @@
 
-import { Tabs , TabList, TabPanels, Tab, TabPanel, Flex, Stack } from '@chakra-ui/react'
+import { Tabs , TabList, TabPanels, Tab, TabPanel, Stack } from '@chakra-ui/react'
 
 import Uiuxdesign from './Uiuxdesign'
 import Webdev from './Webdev'
