@@ -1,4 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+=======
+
+>>>>>>> 0ba226fcff32886ee75412523960e8fc02376a52
+=======
 #root {
   max-width: 1280px;
   /* margin: 0 auto; */
@@ -8,6 +19,7 @@
 =======
 
 >>>>>>> 08bca2c6db8ca81d86ac162982fec37e094cb4bb
+>>>>>>> 6930b37ad86c86554dc1cb60b8716cf726021a72
 
 .animated-text {
   transform: translateY(100%);

@@ -8,8 +8,13 @@ import store from './redux/reduxStore.ts'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
-    <ChakraProvider>
+
+<ChakraProvider >
     <App />
-  </ChakraProvider>,
+
+    </ChakraProvider>
   </Provider>
+    
+    
+  
 )

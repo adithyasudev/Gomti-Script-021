@@ -1,28 +1,37 @@
 
+
+
+// import './App.css'
+// import Bluebox from './Components/Bluebox'
+// import { ContactUs1 } from './Components/ContactUs1'
+
 import './App.css'
-import Career from './Components/Career'
+// import Bluebox from './Components/Bluebox'
+// import Services from './pages/Services'
 
-
-import Footer from './Components/Footer'
-import LandingPage from './Components/LandingPage'
-
-// import Navbar from './Components/Footer'
-
-function App() {
+// function App() {
   
 
+//   return (
+//     <>
+//       <p>Hello</p>
+//   <ContactUs1 />
+//     </>
+//   )
+// }
+
+// export default App
+// src/App.tsx
+import './App.css';
+import { ContactUs } from './pages/ContactUs';
+function App() {
   return (
-    <>
-      
-      {/* <Navbar/> */}
-     
-      <LandingPage/>
-      <Footer/>
-      <Career/>
-      
-    </>
-  )
+
+    <ContactUs />
+
+  );
+
+
 }
 
-
-export default App
+export default App;

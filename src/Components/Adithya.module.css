@@ -1,0 +1,87 @@
+.img040{
+    background-image: url(https://humanico.co/wp-content/uploads/2022/10/human-potential.png);
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-top: 12vh;
+}
+.flex{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+background-color: #ffffff#fff;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+}
+.container{
+margin-top: 10vh;
+background-color: #ffffff#fff;
+font-size: 30px;
+
+@media (max-width: 768px) {
+    .img040 {
+      width: 70vw; /* Adjusted width for smaller screens */
+    }
+  
+    .container {
+      font-size: 1.2rem; /* Adjusted font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .img040 {
+      width: 90vw; /* Adjusted width for mobile screens */
+    }
+  
+    .container {
+      font-size: 1rem; /* Adjusted font size for mobile screens */
+    }
+  }
+
+}
+
+
+/* .Location {
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 50vh;
+}
+
+.loc {
+  font-size: 80px;
+}
+
+.loct {
+  background-color: white;
+  margin-left: 11vw;
+}
+
+@media screen and (max-width: 768px) {
+  .loct {
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loct {
+    margin-left: 2vw;
+  }
+}
+.cardBodyText{
+  @media screen and (max-width: 768px) {
+    .cardBodyText {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .cardBodyText {
+      font-size: 14px;
+    }
+  }
+} */

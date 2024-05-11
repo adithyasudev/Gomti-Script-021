@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   Box,
   FormControl,
@@ -7,7 +7,6 @@ import {
   Textarea,
   Button,
   useColorModeValue,
-  Image,
 } from "@chakra-ui/react";
 
 const Contectus = () => {
