@@ -6,7 +6,7 @@ const Navbar = () => {
     
   return (
 
-    <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5"}}>
+    <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5", alignItems:'center'}}>
 
     <div>
         <img src="https://picjj.com/images/2024/05/11/hQZkl.jpeg" width="80px" alt="" />
@@ -19,7 +19,7 @@ const Navbar = () => {
         <NavLink  className={Styles.navbarlink} to="./">Events</NavLink>
         <NavLink  className={Styles.navbarlink} to="./">Contact us</NavLink>
     </div>
-  <InitialFocus/>
+  <InitialFocus />
     </div>
    
   )
