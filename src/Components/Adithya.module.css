@@ -41,3 +41,21 @@ font-size: 30px;
   }
 
 }
+
+.Location{
+background-color: white;
+width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+/* padding-left: 40px; */
+height: 50vh;
+}
+
+.loc{
+  font-size: 80px;
+}
+.loct{
+background-color:white;
+margin-left: 11vw;
+}

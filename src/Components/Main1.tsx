@@ -1,5 +1,5 @@
-import React from 'react'
-import Bluebox from './Bluebox'
+
+// import Bluebox from './Bluebox'
 import style from './Adithya.module.css'
 import { Stack } from '@chakra-ui/react'
 export const Main1 = () => {
