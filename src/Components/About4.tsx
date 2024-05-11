@@ -4,31 +4,19 @@ import tushar from './images/tushar.jpg'
   import adityas from './images/AdityaS.jpg'
   import kajakk from './images/kajalk.jpg'
   import sourav from './images/sourav.jpg'
+import Bluebox from './Bluebox'
+import useScrollAnimation from '../customHooks/animation'
   
 
 export const About4 = () => {
-
-  // useEffect(() => {
-  //   // Add CSS rule to display team info on hover when component mounts
-  //   const style = document.createElement('style');
-  //   style.textContent = `
-  //     .collageitem:hover .teaminfo {
-  //       opacity: 1;
-  //     }
-  //   `;
-  //   document.head.appendChild(style);
-
-  //   // Clean up function to remove the added style element when component unmounts
-  //   return () => {
-  //     document.head.removeChild(style);
-  //   };
-  // }, []);
+  const isVisible = useScrollAnimation();
 
   return (
     <>
+    <div className={`animated-text ${isVisible ? 'animated' : ''}`}>
     <div className={Style.about4}>
 <div className={Style.team} >
-       <h3>Say Hello To Team</h3>
+       <h3><span><Bluebox /></span>Say Hello To Team</h3>
 </div>
    
         <div className={Style.collage}>
@@ -41,9 +29,10 @@ export const About4 = () => {
           <h2>Aditya Suhdev</h2>
           <span>Team Leader</span>
           <div className={Style.teamsocial}>
-            <a href="mailto:adithyasudev28@gmail.com">
+            <div  className={Style.mail}>
+            <a   href="mailto:adithyasudev28@gmail.com">
               <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/mail.png" alt="Email"></img>
-            </a>
+            </a></div>
             <a href="https://www.linkedin.com/in/adithya-s-7a7553151/">
               <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/linkedin.png" alt="LinkedIn"></img>
             </a>
@@ -125,6 +114,7 @@ export const About4 = () => {
           </div>
         </div>
       </div>
+     </div>
      </div>
      </div>
    </>

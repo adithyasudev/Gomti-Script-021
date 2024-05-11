@@ -1,4 +1,4 @@
-.upper {
+/* .upper {
     width: 100%;
     background-image: url("https://picjj.com/images/2024/05/09/pzhp7.png");
     background-size: cover; 
@@ -16,7 +16,29 @@
     font-size: xx-large;
     animation: scaleAnimation 1.5s ease forwards; 
     animation-delay: 1s;
-  }
+  } */
+
+  .bigtxt{
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+.Event1{
+  padding-left: 100px; 
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+}
+.bgport{
+    background-image: url(https://convextech.com/wp-content/uploads/2022/07/events-hero.jpg);
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
   @keyframes scaleAnimation {
     from {
         transform: scale(0.5);
@@ -32,25 +54,34 @@
    
 
  .about2 {
+  margin-top: 10vh;
     display: flex;
+    justify-content: space-around;
     width: 90%;
     margin-left: 4rem;
     position: relative; /* Added for positioning */
   }
   
+  .containavout2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+    width: 60vw;
+  }
   .h1 {
     color: rgb(2, 10, 100);
-    text-align: left;
-    margin-left: 40px;
-    animation: slideInLeft 1.5s ease forwards; 
+      animation: slideInLeft 1.5s ease forwards; 
     animation-delay: 1s;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 40px;
   }
   
   .p {
-    color: rgb(0, 1, 11);
-    text-align: left;
     margin-left: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 1, 11);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     animation: slideInBottom 1.5s ease forwards; 
     animation-delay: 1.5s; 
   }
@@ -100,28 +131,30 @@
  
   /* About 3 is statred  */
   .about3 {
+   
     width: 90%;
     margin-left: 4rem;
   }
   
-  /* Styling for the h2 headings */
+
   .h2 {
+    margin-top: 5vh;
     color: rgb(2, 10, 100);
     text-align: left;
     margin-left: 40px;
     animation: slideInLeft 1.5s ease forwards;
     animation-delay: 1s;
+      font-weight: bolder;
+    font-size: xx-large;
   }
-  
-  /* Styling for the span elements */
+
   .span {
     color: rgb(20, 195, 218);
   }
   
-  /* Styling for the p2 paragraphs */
   .p2 {
     color: rgb(0, 1, 11);
-    text-align: left; /* Added for alignment */
+    text-align: left;
     margin-left: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     animation: slideInBottom 1.5s ease forwards;
@@ -134,15 +167,16 @@
   /* About 4 is statred  */
 
   .about4 {
+   
     width: 90%;
     margin-left: 8%;
   }
   
   .collage {
-    display: grid;
+    display: flex;
     
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+   justify-content: space-evenly;
+    
   }
   
   .team {
@@ -155,7 +189,7 @@
   
   .collageitem {
     margin-top: 10px;
-    width: 100px;
+    width: 80%;
     position: relative;
     
   }
@@ -174,6 +208,11 @@
     justify-content: space-around;
      gap: 20px;
   }
+
+  .mail{
+    margin-top: 5px;
+  }
+
   .teaminfo {
     
     width: 30vh;
@@ -209,12 +248,13 @@
  
   /* About 5 is statred  */
   .about5{
+    margin-top: 20px;
     height: 20vh;
     background-color: rgb(181, 180, 180);
   }
   .p5{
     position: absolute;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 500px;
   }
   

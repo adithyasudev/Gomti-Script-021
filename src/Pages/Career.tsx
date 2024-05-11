@@ -4,7 +4,7 @@ import { Carrercard } from '../Components/careers/Carrercard'
 export const Career = () => {
   return (
     <div className={Style.carrer}>
-       <Carrercard/>
+       <Carrercard />
     </div>
   )
 }

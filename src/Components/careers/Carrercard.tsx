@@ -1,50 +1,4 @@
 
-// import Style from './carrercard.module.css';
-// import { BackdropExample } from './careerapply';
-// import { useState, useEffect } from 'react';
-
-//  export const Carrercard = () => {
-//   const [jobs, setJobs] = useState([]);
-//   const [selectedJob, setSelectedJob] = useState(null);
-
-//   useEffect(() => {
-//     const fetchJobs = async () => {
-//       const response = await fetch('https://gomti-script-021.onrender.com/jobs');
-//       const data = await response.json();
-//       setJobs(data);
-//     };
-
-//     fetchJobs();
-//   }, []);
-
-//   const handeApplyNow = (job) => {
-//     setSelectedJob(job);
-//   };
-
-//   return (
-//     <div className={Style.joblistings}>
-//       <h1>Job Listings</h1>
-//       <div className={Style.gridcontainer}>
-//         {jobs.map((job) => (
-//           <JobListing key={job.id} job={job} />
-//         ))}
-//       </div>
-//       {selectedJob && <BackdropExample job={selectedJob} closeModal={closeModal} />} 
-//     </div>
-//   );
-// };
-
-// const JobListing = ({ job }) => (
-//   <div className={Style.joblisting}>
-//     <h2>{job.title}</h2>
-//       <p className={Style.p2}>{job.type}</p>
-//     <p className={Style.p1}>{job.description}</p>
-//     {/* <a href="#" className={Style.applybutton} onClick={() => handeApplyNow(job)}>Apply Now</a> */}
-//     <button className={Style.applybutton} onClick={() => handleApplyNow(job)}>Apply Now</button>
-//   </div>
-// );
-
-
 
 import { useState, useEffect } from 'react';
 import { Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, useDisclosure } from '@chakra-ui/react';
@@ -98,7 +52,7 @@ export const Carrercard = () => {
 
   return (
     <div className={Style.joblistings}>
-      <h1>Job Listings</h1>
+      <h1 className={Style.joblist}>Job Listings</h1>
       <div className={Style.gridcontainer}>
         {jobs.map((job) => (
           <JobListing key={job.id} job={job} handleApplyNow={handleApplyNow} />
@@ -113,7 +67,7 @@ export const Carrercard = () => {
            
 
           />
-          <ModalContent w="70vw" className={Style.modalContent}>
+          <ModalContent w="1000vw" className={Style.modalContent}>
             <ModalHeader className={Style.header} >Job Application for: {selectedJob.title}</ModalHeader>
             <ModalCloseButton w="0" className={Style.sideclose}  />
             <ModalBody >
@@ -122,16 +76,17 @@ export const Carrercard = () => {
                 <p>Applied successfully! You will be redirected to the home page shortly.</p>
               ) : (
                 <>
-                  <h1 className={Style.modalp1}>{selectedJob.title}.</h1>
-                  <p className={Style.p3}>{selectedJob.type}</p>
-                  <p className={Style.p4}>Descriptions:{selectedJob.description}</p>
-                  <p className={Style.requirement}>Requirements: {selectedJob.requirements.join(', ')}</p>
+                {/* <h1 className={Style.modalp1}>{selectedJob.title}.</h1> */}
+                  <p className={Style.p3}><span className={Style.spa}>Type:</span>{selectedJob.type}</p>
+                  <p className={Style.p4}><span className={Style.spa}>Descriptions:</span>{selectedJob.description}</p>
+                  <p className={Style.requirement}><span className={Style.spa}>Requirments:</span>{selectedJob.requirements.join(', ')}</p>
 
-                  <Button  className={Style.button} onClick={handleApply}>Apply Now</Button>
+                  
                 </>
               )}
             </ModalBody>
-            <ModalFooter>
+            <ModalFooter className={Style.footer} >
+            <Button  className={Style.button} onClick={handleApply}>Apply Now</Button>
               <Button className={Style.close} onClick={closeModal}>Close</Button>
             </ModalFooter>
           </ModalContent>
@@ -144,9 +99,9 @@ export const Carrercard = () => {
 
 const JobListing = ({ job, handleApplyNow }) => (
   <div className={Style.joblisting} key={job.id}>
-    <h2>{job.title}</h2>
-    <p className={Style.p2}>{job.type}</p>
-    <p className={Style.p1}>{job.description}</p>
+    <h2 className={Style.h2}>{job.title}</h2>
+    <p className={Style.p2}><span className={Style.spa}>Type:</span>{job.type}</p>
+    <p className={Style.p1}><span className={Style.spa}>Descriptions:</span>{job.description}</p>
     <button className={Style.applybutton} onClick={() => handleApplyNow(job)}>Apply Now</button>
   </div>
 );
