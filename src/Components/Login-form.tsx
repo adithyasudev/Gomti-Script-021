@@ -10,8 +10,9 @@ import {
     ModalCloseButton,
   } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
-import Login from "./Login"
+// import Login from './Login'
 import Signup from "./Signup"
+import Login from "./Login"
 
  function  InitialFocus(){
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -42,7 +43,7 @@ import Signup from "./Signup"
   </TabList>
   <TabPanels>
      <TabPanel>
-             <Login/>
+             <Login />
      </TabPanel>
     <TabPanel>
          <Signup/>     
