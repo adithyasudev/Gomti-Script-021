@@ -1,17 +1,13 @@
-//import React from 'react'
-//import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
-
 import { Stack } from "@chakra-ui/react";
-import Style from "./Career.module.css";
+import Style from "./Landing.module.css";
 import Bluebox from "./Bluebox";
-import useScrollAnimation from "../customHooks/animation";
+  import useScrollAnimation from "../customHooks/animation";
 import CustomButton from "./button";
 
-const Career = () => {
-  const isVisible = useScrollAnimation();
+const Landing = () => {
   return (
     <>
-    <Stack spacing={2}>
+       <Stack spacing={2}>
       <div
         style={{
           backgroundImage: "url(https://convextech.com/wp-content/uploads/2022/07/hero-banner.png)",
@@ -22,7 +18,7 @@ const Career = () => {
 
         }}
       >
-        <div className={Style.portfolio} style={{margin:"auto"}}>
+        <div className={Style.career} style={{margin:"auto"}}>
           <Bluebox />
           <div className={`animated-text ${isVisible ? "animated" : ""}`}>
             <p style={{fontWeight: '400'}}>
@@ -47,13 +43,8 @@ const Career = () => {
       
     </Stack>
 
+    </>
+  )
+}
 
-  
-   
-
-    
-   </>
-  );
-};
-
-export default Career;
+export default Landing

@@ -16,10 +16,13 @@ const Footer = () => {
           backgroundColor: "white",
           marginTop: "20px",
           marginLeft: "80px",
+
         }}
       >
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
-          <div style={{ width: "400px", marginBottom: "20pxf" }}>
+        <div style={{ display: "flex", justifyContent: "space-around" ,
+          flexWrap:"wrap"
+        }}>
+          <div style={{ width: "400px", marginBottom: "20pxf",marginLeft:"20px"}}>
             <img src="https://picjj.com/images/2024/05/10/FKc4a.jpeg"></img>
             <p style={{marginLeft:"10px"}}>
               We at ConvexTech aim to create 2<br />
