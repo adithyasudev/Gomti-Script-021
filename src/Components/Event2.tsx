@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import axios from 'axios';
 import Style from'./Sartik.module.css'
 
@@ -38,9 +38,14 @@ const EventCard = () => {
     //               <p>{event.date}</p>
     //           </figcaption>
     //     </>
-      <div>
-         {events.map((event:eventcard) => (
-          <div style={{backgroundImage:`url(${event.image})`}}>
+      <div style={{display:'flex',color:'white', justifyContent:'space-between'}}>
+       
+            {events.map((event:eventcard) => (
+              //  if({event.title}%2==0){
+            <div style={{backgroundImage:`url(${event.image})` ,color:'white', height:'20vh', width:'10vw',backgroundRepeat:'no-repeat' ,backgroundSize:'cover', backgroundPosition:'center'}}>
+                 <h5>{event.title}</h5>
+                 <p>{event.discription}</p>
+                 <p>{event.date}</p>
 
           </div>
 

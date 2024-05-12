@@ -1,0 +1,23 @@
+/* src/components/Contactus1.css */
+.contactus-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .locations {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .location {
+    width: 45%;
+
+
+  }
+
+  @media (max-width: 768px) {
+    .location {
+      width: 100%; /* Adjust width for smaller screens */
+    }
+  }
