@@ -10,11 +10,8 @@ const Navbar = () => {
   return (
  
 <>
-<div style={{height:"30px", backgroundColor:"white",width:"100vw"} }> 
 
-
-    </div>
-    <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5"}}>
+    <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5" ,position:'fixed',top:'0px',right:'0px',left:'0px' ,width:'100vw',zIndex:'1'}}>
 
 
     <div>
@@ -47,6 +44,9 @@ const Navbar = () => {
     {(loggedinAdmin||loggedinUser)&& (<Sidebar/>)} 
 </div>
 
+    </div>
+
+    <div style={{height:"12.2vh", backgroundColor:"white",width:"100vw"} }> 
     </div>
 </>
     
