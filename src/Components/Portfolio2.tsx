@@ -28,10 +28,10 @@ const Portfolio2 = () => {
      
     </TabPanel>
     <TabPanel>
-      <Uiuxdesign />
-    </TabPanel>
+    <Webdev />
+        </TabPanel>
     <TabPanel>
-      <Webdev />
+     <Uiuxdesign />
     </TabPanel>
     <TabPanel>
       <Mobileapp />

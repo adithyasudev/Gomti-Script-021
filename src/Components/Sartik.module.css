@@ -61,7 +61,7 @@
   padding-left: 100px; 
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #ffffff;
 
 }
 .bgport{
@@ -79,6 +79,10 @@
   justify-content: center;
   gap: 20px;
 }
-.carditem{
+.hoveradmin:hover{
+    cursor: pointer;
 
+}
+.hovereve:hover{
+    scale: 1.01;
 }
