@@ -46,7 +46,7 @@ const Navbar = () => {
 
     </div>
 
-    <div style={{height:"12.2vh", backgroundColor:"white",width:"100vw"} }> 
+    <div style={{height:'80px', backgroundColor:"white",width:"100vw"} }> 
     </div>
 </>
     
