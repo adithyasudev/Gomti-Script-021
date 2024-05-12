@@ -1,20 +1,13 @@
-
-
-
-
 import './App.css'
-import Services from './pages/Services'
-
-
-
+import Services from './Pages/Services'
 import './App.css';
-import { ContactUs } from './pages/ContactUs';
-import CareerPage from './pages/CareerPage';
-import Events from './pages/Events';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
+import { ContactUs } from './Pages/ContactUs';
+import CareerPage from './Pages/CareerPage';
+import Events from './Pages/Events';
+import Home from './Pages/Home';
+import Portfolio from './Pages/Portfolio';
 import { Route, Routes } from 'react-router';
-import { About } from './pages/About';
+import { About } from './Pages/About';
 function App() {
   return (
     <>

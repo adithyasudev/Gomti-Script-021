@@ -16,7 +16,7 @@ import {
 
 
 
-import AdminDashboard from '../pages/AdminDashboard'
+import AdminDashboard from '../Pages/AdminDashboard'
 
 import { ADMIN_LOGOUT, LOGOUT_REQUEST } from "../redux/reducers";
 
