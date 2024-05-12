@@ -34,9 +34,7 @@ const Login = () => {
    console.log(password.current.value);
 
   userDetails={email:EmailInput.current.value, password:password.current.value}
-   
-  dispatch(loginUser(userDetails));
-  
+     dispatch(loginUser(userDetails));  
   }
    
  }
