@@ -1,10 +1,10 @@
 import React from 'react'
-import { FreeLancer } from './freelancers'
-import {Button } from "@chakra-ui/react"
+// import { FreeLancer } from './freelancers'
+// import {Button } from "@chakra-ui/react"
 import { StarIcon } from '@chakra-ui/icons'
 import { Employees } from './Employees'
 import { ToastExample } from './taost'
-const Employee:React.FC<Employees> = ({name,id,degree, desiredRole,rating,profileImage}) => {
+const Employee:React.FC<Employees> = ({name,degree, desiredRole,rating,profileImage}) => {
   return (
     <div style={{width:"300px", padding:"20px",  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", borderRadius:"5px"  } } >
         <h2 style={{fontWeight:"bold"}}>

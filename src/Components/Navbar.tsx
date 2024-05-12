@@ -8,10 +8,16 @@ import { Alert,  AlertIcon, Spinner} from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { Store } from '../redux/types'
 const Navbar = () => {
+
     const loggedinUser = useSelector((state: Store ) => state.user.isAuthenticated); 
     const loggedinAdmin= useSelector((state: Store ) => state.admin.isAuthenticated); 
     const lodingUser= useSelector((state: Store ) => state.user.loading);
     const lodingAdmin= useSelector((state: Store ) => state.user.loading);
+
+    const loggedinUser = useSelector(state=>state.user.isAuthenticated); 
+    const loggedinAdmin= useSelector(state=>state.admin.isAuthenticated); 
+    const lodingUser= useSelector(state=>state.user.loading);
+
     const [showAlert, setShowAlert] = useState(false);
 
     useEffect(() => {

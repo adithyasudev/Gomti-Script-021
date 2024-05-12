@@ -1,5 +1,4 @@
 //Tushar Section two services
-import React from 'react'
 import Bluebox from './Bluebox'
 
 const Sectiontwoinner = () => {

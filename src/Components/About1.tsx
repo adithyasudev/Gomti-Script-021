@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import Bluebox from "./Bluebox"
 import Style from './about1.module.css'
 

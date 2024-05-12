@@ -1,6 +1,6 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import Freelancer from './Freelancer';
+import { useEffect, useState } from 'react'
+// import Freelancer from './Freelancer';
 import Employee from './Employee';
 
 export interface Employees{

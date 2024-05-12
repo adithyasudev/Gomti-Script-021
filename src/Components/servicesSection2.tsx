@@ -1,5 +1,5 @@
-import { color } from '@chakra-ui/react'
-import React, { useEffect, useState } from 'react'
+// import { color } from '@chakra-ui/react'
+// import React, { useEffect, useState } from 'react'
 import useScrollAnimation from '../customHooks/animation'
 
 const ServicesSectioninner2= ({children}) => {

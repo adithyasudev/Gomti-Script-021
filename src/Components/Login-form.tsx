@@ -1,11 +1,11 @@
-import { Button, FormControl, FormLabel, Input, useDisclosure } from "@chakra-ui/react"
+import { Button, useDisclosure } from "@chakra-ui/react"
 import React from "react"
 import {
     Modal,
     ModalOverlay,
     ModalContent,
     ModalHeader,
-    ModalFooter,
+    // ModalFooter,
     ModalBody,
     ModalCloseButton,
   } from '@chakra-ui/react'

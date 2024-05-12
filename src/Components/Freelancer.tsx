@@ -1,5 +1,6 @@
 import React from 'react'
 import { FreeLancer } from './freelancers'
+
 import { StarIcon } from '@chakra-ui/icons'
 import { ToastExample } from './taost'
 const Freelancer:React.FC<FreeLancer> = ({name, rating, rate_per_hour,skills,total_reviews}) => {
