@@ -10,7 +10,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-import { useDispatch, useSelector } from "react-redux";
+
 
 
 
