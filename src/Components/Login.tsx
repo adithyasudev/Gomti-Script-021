@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 
-import { Button, Input, InputGroup, InputRightElement, Stack } from "@chakra-ui/react"
-import { useDispatch } from 'react-redux';
+import { Alert, AlertDescription, AlertIcon, AlertTitle, Button, Input, InputGroup, InputRightElement, Stack, useToast } from "@chakra-ui/react"
+import { useDispatch, useSelector } from 'react-redux';
 import { loginAdmin, loginUser } from '../redux/asyncFunctions';
 
 
@@ -20,6 +20,9 @@ const Login = () => {
   const EmailInput = useRef<HTMLInputElement>(null);
   const  password = useRef<HTMLInputElement>(null);
 
+  const loggedinUser = useSelector(state=>state.user.isAuthenticated); 
+
+
   //object creation
 
   // let userDetails:userDetail={ email="" , password=""}
@@ -33,6 +36,7 @@ const Login = () => {
   userDetails={email:EmailInput.current.value, password:password.current.value}
    
   dispatch(loginUser(userDetails));
+  
   }
    
  }
@@ -79,7 +83,30 @@ const Login = () => {
     Forgot Password
   </Button>
   <p>Loin as <span onClick={handelAdminlogin}>admin</span></p>
+  
+
   </Stack>
+  {loggedinUser && (
+        <Alert
+          status='success'
+          pos='absolute'
+          bottom='100px'
+          variant='subtle'
+          flexDirection='column'
+          alignItems='center'
+          justifyContent='center'
+          textAlign='center'
+          height='200px'
+        >
+          <AlertIcon boxSize='40px' mr={0} />
+          <AlertTitle mt={4} mb={1} fontSize='lg'>
+            Application submitted!
+          </AlertTitle>
+          <AlertDescription maxWidth='sm'>
+            Thanks for submitting your application. Our team will get back to you soon.
+          </AlertDescription>
+        </Alert>
+      )}
     </>
   )
 }

@@ -19,6 +19,7 @@ import {
 import AdminDashboard from '../Pages/AdminDashboard'
 
 import { ADMIN_LOGOUT, LOGOUT_REQUEST } from "../redux/reducers";
+import UserDasbord from './UserDasbord';
 
 
 
@@ -50,6 +51,7 @@ export function Sidebar() {
             <DrawerHeader></DrawerHeader>
             <DrawerBody>
              {adminLoggedin&&(<AdminDashboard/>)}  
+             {userloggedin && (<UserDasbord />)}
             </DrawerBody>
 
             <DrawerFooter>
