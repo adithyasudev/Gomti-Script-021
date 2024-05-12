@@ -11,8 +11,10 @@ const Navbar = () => {
 <>
 <div style={{height:"30px", backgroundColor:"white",width:"100vw"} }> 
 
+
     </div>
     <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5"}}>
+
 
     <div>
         <img src="https://picjj.com/images/2024/05/11/hQZkl.jpeg" width="80px" alt="" />
@@ -33,10 +35,12 @@ const Navbar = () => {
     </div>
 
 
+
 <div style={{height:"80px",display:"flex",alignItems:"center"}}>
 {!loggedinUser &&!loggedinAdmin&&(<InitialFocus/>)} 
     {loggedinAdmin&& (<button>Admin Dashboard</button>)} 
 </div>
+
     </div>
 </>
     

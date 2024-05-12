@@ -27,18 +27,12 @@
     number:string;
     password:string;
   }
-
-
-
   const Signup = () => {
-
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
 
     const { isOpen, onOpen, onClose } = useDisclosure()
     const cancelRef =useRef<HTMLButtonElement>(null);
-
-
     const Fullname = useRef<HTMLInputElement>(null);
     const EmailInput = useRef<HTMLInputElement>(null);   
     const phoneno = useRef<HTMLInputElement>(null);
@@ -49,12 +43,7 @@
     //handel Signup
     const handelSignup=async ()=>{
       if(Fullname.current && Fullname.current.value && EmailInput.current && EmailInput.current.value && phoneno.current && phoneno.current.value && password.current && password.current.value){
-        // console.log(Fullname.current.value);
-        // console.log( EmailInput.current.value);
-        // console.log( phoneno.current.value);
-        // console.log( password.current.value);      
-
-        const userData: UserDetail = {
+          const userData: UserDetail = {
           name: Fullname.current!.value,
           number: phoneno.current!.value,
           email: EmailInput.current!.value,        
