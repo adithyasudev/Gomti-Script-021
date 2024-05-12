@@ -11,8 +11,8 @@ import { Provider } from "react-redux";
 import React from "react";
 import store from "./redux/reduxStore.ts";
 import Footer from "./Components/Footer.tsx";
-import { ContactUs } from "./Pages/ContactUs.tsx";
-import CareerPage from "./Pages/CareerPage.tsx";
+// import { ContactUs } from "./Pages/ContactUs.tsx";
+// import CareerPage from "./Pages/CareerPage.tsx";
 
 
 

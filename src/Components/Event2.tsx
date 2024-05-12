@@ -40,7 +40,7 @@ const EventCard = () => {
    
   <div style={{display:'flex',color:'white', justifyContent:'space-around', flexWrap:"wrap",gap:"6px", backgroundColor:'#bee0f0'}} >
        
-            {events.map((event:eventcard,index) => (
+            {events.map((event:eventcard) => (
               //  if({event.title}%2==0){
             <div style={{backgroundImage:`url(${event.image})` ,color:'white',height:"230px" , width:"33vw" ,backgroundRepeat:'no-repeat',paddingTop:"160px",paddingLeft:"20px" ,backgroundSize:'cover', backgroundPosition:'center'}}  className={Style.hovereve}>
                  <h2 style={{fontWeight:"bold"}}>{event.title}</h2>

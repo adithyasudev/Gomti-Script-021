@@ -1,6 +1,5 @@
-import React from 'react'
+
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
-import Bluebox from './Bluebox';
 import AddJobopening from './Addjobopening';
 import AddEvents from './AddEvents';
 import RemoveEvents from './RemoveEvents';

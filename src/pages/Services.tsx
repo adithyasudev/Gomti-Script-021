@@ -6,7 +6,7 @@ import axios from 'axios';
 import ServicesSectioninner2 from '../Components/servicesSection2';
 import Style from "../Components/Services.module.css"
 import Freelancers from '../Components/freelancers';
-import Employee from '../Components/Employee';
+// import Employee from '../Components/Employee';
 import Employees from '../Components/Employees';
 
 interface services{

@@ -28,8 +28,8 @@ export function Sidebar() {
 
 
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const adminLoggedin = useSelector(state=>state.admin.isAuthenticated)
-    const userloggedin = useSelector(state=>state.user.isAuthenticated)
+    const adminLoggedin = useSelector((state) =>state.admin.isAuthenticated)
+    const userloggedin = useSelector((state)=>state.user.isAuthenticated)
     const dispatch = useDispatch();
     const handleClick = () => {
       onOpen()
