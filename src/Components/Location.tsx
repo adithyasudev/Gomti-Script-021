@@ -5,7 +5,6 @@ export const Location = () => {
   return (
     <>
       <div style={{
-        backgroundColor: 'white',
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
