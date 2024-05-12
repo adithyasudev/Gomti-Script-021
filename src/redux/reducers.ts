@@ -41,7 +41,14 @@ export const adminFailure = (error: string | null) => ({
   payload: error,
 });
 
-const initialLoginState = {
+
+export interface LoginState {
+  isAuthenticated: boolean;
+  data: string;
+  loading: boolean;
+  error: string | null;
+}
+const initialLoginState:LoginState = {
   isAuthenticated: false,
   data: "",
   loading: false,

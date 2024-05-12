@@ -1,8 +1,6 @@
-
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as  Route, Routes } from "react-router-dom";
 import React, { Suspense } from "react";
-
 const Home = React.lazy(() => import('./Pages/Home'));
 const About = React.lazy(() => import('./Pages/About'));
 const ContactUs = React.lazy(() => import('./Pages/ContactUs'));

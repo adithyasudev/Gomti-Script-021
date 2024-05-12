@@ -3,6 +3,8 @@ import { Alert, AlertDescription, AlertIcon, AlertTitle, Button, Input, InputGro
 import { useDispatch, useSelector } from 'react-redux';
 import { loginAdmin, loginUser } from '../redux/asyncFunctions';
 import Style from './Sartik.module.css'
+import { Store } from '../redux/types';
+
 
 
 //typescript
@@ -20,7 +22,7 @@ const Login = () => {
   const EmailInput = useRef<HTMLInputElement>(null);
   const  password = useRef<HTMLInputElement>(null);
 
-  const loggedinUser = useSelector(state=>state.user.isAuthenticated); 
+  const loggedinUser = useSelector((state: Store ) => state.user.isAuthenticated);
 
 
   //object creation

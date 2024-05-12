@@ -125,7 +125,7 @@ import { User } from '../redux/types';
           <AlertDialogOverlay>
             <AlertDialogContent>
               <AlertDialogHeader fontSize='lg' fontWeight='bold'>
-                Delete Customer
+               User Signed Up Sucessfully
               </AlertDialogHeader>
 
               <AlertDialogBody>

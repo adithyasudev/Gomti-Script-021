@@ -1,8 +1,13 @@
+import { LoginState } from "./reducers";
+
 export interface User{
     email:string;
     password:string;
 } 
-
+  export interface Store{
+   user:LoginState;
+   admin:LoginState;
+ }
 
 // ActionTypes for Redux actions
 export enum ActionTypes {

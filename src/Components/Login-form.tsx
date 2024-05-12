@@ -22,7 +22,7 @@ import Login from "./Login"
   
     return (
       <>
-        <Button onClick={onOpen}>LOGIN/SIGNUP</Button>
+        <Button onClick={onOpen} style={{width:'auto'}}>LOG-IN/SIGNUP</Button>
        
   
         <Modal
