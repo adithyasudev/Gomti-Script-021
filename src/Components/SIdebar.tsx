@@ -23,13 +23,14 @@ import AdminDashboard from '../Pages/AdminDashboard'
 
 import { ADMIN_LOGOUT, LOGOUT_REQUEST } from "../redux/reducers";
 import UserDasbord from './UserDasbord';
+import { Store } from "../redux/types";
 
 export function Sidebar() {
 
 
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const adminLoggedin = useSelector((state) =>state.admin.isAuthenticated)
-    const userloggedin = useSelector((state)=>state.user.isAuthenticated)
+    const adminLoggedin = useSelector((state: Store) => state.admin.isAuthenticated)
+    const userloggedin = useSelector((state: Store) => state.user.isAuthenticated)
     const dispatch = useDispatch();
     const handleClick = () => {
       onOpen()

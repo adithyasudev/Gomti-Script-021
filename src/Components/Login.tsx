@@ -3,6 +3,7 @@ import { Alert, AlertDescription, AlertIcon, AlertTitle, Button, Input, InputGro
 import { useDispatch, useSelector } from 'react-redux';
 import { loginAdmin, loginUser } from '../redux/asyncFunctions';
 import Style from './Sartik.module.css'
+import { Store } from '../redux/types';
 
 
 //typescript
@@ -20,35 +21,36 @@ const Login = () => {
   const EmailInput = useRef<HTMLInputElement>(null);
   const  password = useRef<HTMLInputElement>(null);
 
-  const loggedinUser = useSelector(state=>state.user.isAuthenticated); 
+  const loggedinUser = useSelector((state: Store) => state.user.isAuthenticated);
 
 
   //object creation
 
   // let userDetails:userDetail={ email="" , password=""}
-  let userDetails: LoginDetail = { email: "", password: "" };
+  // let userDetails: LoginDetail = { email: "", password: "" };
 
  const handellogin=()=>{
   if(EmailInput.current && EmailInput.current.value && password.current && password.current.value){
    console.log(EmailInput.current.value);
    console.log(password.current.value);
 
-  userDetails={email:EmailInput.current.value, password:password.current.value}
+  const  userDetails : LoginDetail ={email:EmailInput.current.value, password:password.current.value}
+
      dispatch(loginUser(userDetails));  
   }
    
  }
-
  const handelAdminlogin=()=>{
   if(EmailInput.current && EmailInput.current.value && password.current && password.current.value){
-    console.log(EmailInput.current.value);
-    console.log(password.current.value);
- 
-   userDetails={email:EmailInput.current.value, password:password.current.value}
-   dispatch(loginAdmin(userDetails));
-  }
- }
+   console.log(EmailInput.current.value);
+   console.log(password.current.value);
 
+  const  userDetails : LoginDetail ={email:EmailInput.current.value, password:password.current.value}
+
+     dispatch(loginAdmin (userDetails));  
+  }
+   
+ }
   return (
     <>
       <Stack spacing={5}>

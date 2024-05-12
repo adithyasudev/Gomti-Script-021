@@ -1,13 +1,20 @@
-
-
 import { useState, useEffect } from 'react';
 import { Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, ModalFooter, useDisclosure } from '@chakra-ui/react';
 import Style from './carrercard.module.css';
 
+// Define the type for the job object
+interface Job {
+  id: number;
+  title: string;
+  type: string;
+  description: string;
+  requirements: string[];
+}
+
 export const Carrercard = () => {
-  const [jobs, setJobs] = useState([]);
-  const [selectedJob, setSelectedJob] = useState(null);
-  const [applied, setApplied] = useState(false); // State to track whether user has applied
+  const [jobs, setJobs] = useState<Job[]>([]);
+  const [selectedJob, setSelectedJob] = useState<Job | null>(null); // Specify the type as Job | null
+  const [applied, setApplied] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   useEffect(() => {
@@ -28,13 +35,13 @@ export const Carrercard = () => {
     fetchJobs();
   }, []);
 
-  const handleApplyNow = (job) => {
+  const handleApplyNow = (job: Job) => {
     setSelectedJob(job);
     onOpen(); 
   };
 
   const closeModal = () => {
-    setSelectedJob(null);
+    setSelectedJob(null); // Set selectedJob to null when closing the modal
     onClose();
     setApplied(false); 
   };
@@ -96,7 +103,8 @@ export const Carrercard = () => {
 };
 
 
-const JobListing = ({ job, handleApplyNow }) => (
+const JobListing = ({ job, handleApplyNow }: { job: Job; handleApplyNow: (job: Job) => void }) => (
+
   <div className={Style.joblisting} key={job.id}>
     <h2 className={Style.h2}>{job.title}</h2>
     <p className={Style.p2}><span className={Style.spa}>Type:</span>{job.type}</p>
@@ -104,3 +112,5 @@ const JobListing = ({ job, handleApplyNow }) => (
     <button className={Style.applybutton} onClick={() => handleApplyNow(job)}>Apply Now</button>
   </div>
 );
+
+export default Carrercard;
