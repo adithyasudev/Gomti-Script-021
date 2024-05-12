@@ -3,10 +3,10 @@ import Bluebox from './Bluebox';
 export const ContactUs2 = () => {
   return (
     <>
-      <div style={{ backgroundColor: '#ffffff#fff' }}>
-        <h1 style={{ marginLeft: '12%', fontSize: '70px' }}>Contact Us</h1>
+      <div style={{ backgroundColor: 'white' }}>
+        <h1 style={{ marginLeft:'4vw',fontSize: '70px' }}>Contact Us</h1>
 
-        <div style={{ display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', height: 'auto' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', height: 'auto',backgroundColor:'white' }}>
           <div style={{ margin: '20px' }}>
             <Bluebox />
             <br />
