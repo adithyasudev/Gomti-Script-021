@@ -1,4 +1,6 @@
+
 import React, { useEffect, useState } from 'react'
+
 import Bluebox from './Bluebox'
 import { Stack } from '@chakra-ui/react'
 import useScrollAnimation from '../customHooks/animation';
