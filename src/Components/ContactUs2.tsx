@@ -10,7 +10,7 @@ export const ContactUs2 = () => {
           <div style={{ margin: '20px' }}>
             <Bluebox />
             <br />
-            <p style={{ fontSize: 'clamp(16px, 2vw, 30px)' }}> <span style={{ color: 'blue', fontSize: 'clamp(18px, 2.5vw, 35px)' }}>ConvexTech Inc.</span> is proud to operate with a globally distributed team, ensuring a diverse
+            <p style={{ fontSize: 'clamp(16px, 2vw, 30px)' }}> <span style={{ color: 'blue', fontSize: 'clamp(18px, 2.5vw, 35px)' }}>Beyond Boundaries</span> is proud to operate with a globally distributed team, ensuring a diverse
               <br /> and dynamic working environment. Our offices are strategically located across three <br /> countries, each fully equipped with the necessary resources to support our operations <br /> and innovations.</p>
             <br />
             <p style={{ fontSize: 'clamp(14px, 1.5vw, 25px)' }}>For detailed addresses and specific contact information of each office, we invite you to<br /> reach out directly to our team.</p>
