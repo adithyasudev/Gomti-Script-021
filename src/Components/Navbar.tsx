@@ -4,17 +4,30 @@ import Styles from './Navlink.module.css'
 import InitialFocus from './Login-form'
 import {  useSelector } from 'react-redux'
 import { Sidebar } from './SIdebar'
+import { Alert,  AlertIcon, Spinner} from '@chakra-ui/react'
+import { useEffect, useState } from 'react'
 const Navbar = () => {
     const loggedinUser = useSelector(state=>state.user.isAuthenticated); 
     const loggedinAdmin= useSelector(state=>state.admin.isAuthenticated); 
+    const lodingUser= useSelector(state=>state.user.loading);
+    const lodingAdmin= useSelector(state=>state.user.loading);
+    const [showAlert, setShowAlert] = useState(false);
+
+    useEffect(() => {
+        if (loggedinUser) {
+            setShowAlert(true);
+            const timer = setTimeout(() => {
+                setShowAlert(false);
+            }, 1500);
+            return () => clearTimeout(timer);
+        }
+    }, [loggedinUser]);
+
   return (
  
 <>
-<div style={{height:"30px", backgroundColor:"white",width:"100vw"} }> 
 
-
-    </div>
-    <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5"}}>
+    <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5" ,position:'fixed',top:'0px',right:'0px',left:'0px' ,width:'100vw',zIndex:'1'}}>
 
 
     <div>
@@ -46,8 +59,32 @@ const Navbar = () => {
 {!loggedinUser &&!loggedinAdmin&&(<InitialFocus/>)} 
     {(loggedinAdmin||loggedinUser)&& (<Sidebar/>)} 
 </div>
-
     </div>
+    <div style={{height:'80px', backgroundColor:"white",width:"100vw"} }> 
+    </div>
+
+    {loggedinUser && showAlert && (
+       <div>
+       <Alert status='success' variant='subtle' pos='fixed'
+        bottom='20px' margin='auto' width='40vw' marginLeft='30%' >
+        <AlertIcon />
+        User Logged in Sucessfully!
+       </Alert>
+       </div>
+      )}
+
+{lodingUser && !loggedinUser  && <Spinner
+  thickness='4px'
+  speed='0.65s'
+  emptyColor='gray.200'
+  color='blue.500'
+  size='xl'
+  pos='fixed'
+  zIndex='2'
+  marginLeft='50%'
+  marginTop='50%'
+/>
+}
 </>
   )
 }

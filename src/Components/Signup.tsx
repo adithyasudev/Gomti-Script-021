@@ -16,6 +16,8 @@
     useDisclosure,
   } from '@chakra-ui/react'
   import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { User } from '../redux/types';
 
 
 
@@ -37,6 +39,7 @@
     const EmailInput = useRef<HTMLInputElement>(null);   
     const phoneno = useRef<HTMLInputElement>(null);
     const password = useRef<HTMLInputElement>(null);
+    let dispatch =useDispatch()
   
 
 
@@ -49,11 +52,16 @@
           email: EmailInput.current!.value,        
           password: password.current!.value,
       }
+      const singnuser: User={
+        email: EmailInput.current!.value,        
+        password: password.current!.value,
+      }
       try {
         const response = await axios.post('https://gomti-script-021.onrender.com/user', userData)
         console.log('User data posted successfully:', response.data);
         // Clear the form fields after successful submission
         onOpen();
+        dispatch({type:"LOGIN_SUCCESS",payload:singnuser})
         resetForm();
 
       } catch (error) {

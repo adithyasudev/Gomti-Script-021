@@ -1,3 +1,4 @@
+
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React, { Suspense } from "react";
@@ -11,6 +12,7 @@ const Portfolio = React.lazy(() => import('./Pages/Portfolio'));
 const Events = React.lazy(() => import('./Pages/Events'));
 
 const LoadingFallback = () => <div>Loading...</div>;
+
 
 function App() {
   return (

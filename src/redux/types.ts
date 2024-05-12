@@ -3,6 +3,7 @@ export interface User{
     password:string;
 } 
 
+
 // ActionTypes for Redux actions
 export enum ActionTypes {
     LOGIN_REQUEST = "LOGIN_REQUEST",
