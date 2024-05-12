@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Bluebox from './Bluebox'
 import { Stack } from '@chakra-ui/react'
 import useScrollAnimation from '../customHooks/animation';
@@ -6,6 +6,14 @@ import Style from './Sartik.module.css'
 // import './App.css'
 const Portfolio1 = () => {
   const isVisible = useScrollAnimation(); 
+  let [animated,setAnimated] = useState(false);
+   useEffect(()=>
+  {
+    const timer = setTimeout(() => {
+      setAnimated(true);
+    }, 300);
+    return () => clearTimeout(timer);
+  },[])
 
   return (
     <>  
@@ -13,7 +21,7 @@ const Portfolio1 = () => {
     <div style={{backgroundImage: 'url(https://convextech.com/wp-content/uploads/2023/02/Portfolio.jpg)', backgroundSize: 'cover ', width: '100vw', height: '250px',margin:'100' } }  className={Style.bgport}>
     <div className={Style.portfolio} >
     <Bluebox  />
-    <h1  className={`animated-text ${isVisible ? 'animated' : ''}`}><p className={Style.bigtxt}>Portfolio</p></h1>
+    <h1  className={`animated-text ${animated ? 'animated' : ''}`}><p className={Style.bigtxt}>Portfolio</p></h1>
    </div>
    
 

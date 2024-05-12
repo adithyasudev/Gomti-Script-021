@@ -82,7 +82,7 @@ export const loginReducer = (state = initialLoginState, action: Actiontype) => {
 export const adminReducer = (state = initialLoginState, action: Actiontype) => {
   switch (action.type) {
     case ADMIN_REQUEST:
-      console.log("requesting");
+     
       
       return {
         ...state,
@@ -90,8 +90,7 @@ export const adminReducer = (state = initialLoginState, action: Actiontype) => {
         error: null,
       };
     case ADMIN_SUCCESS:
-      console.log("sucess admin");
-      
+     
       return {
         ...state,
         isAuthenticated: true,
@@ -99,8 +98,7 @@ export const adminReducer = (state = initialLoginState, action: Actiontype) => {
         error: null,
         
       };
-    case ADMIN_FAILURE:
-      console.log("failur admin");      
+    case ADMIN_FAILURE:      
       return {
         ...state,
         isAuthenticated: false,
