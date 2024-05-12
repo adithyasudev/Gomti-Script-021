@@ -7,7 +7,7 @@ import { About3 } from '../Components/About3'
 
 
 
-export const About = () => {
+ const About = () => {
   return (
     <>
     <div className={Style.about}>
@@ -23,3 +23,4 @@ export const About = () => {
     </>
   )
 }
+export default About

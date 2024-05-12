@@ -1,7 +1,7 @@
 
 import Contactus1 from '../Components/ContactUs1'
 
-export const ContactUs = () => {
+ const ContactUs = () => {
   return (
     <>
     <Contactus1 />
@@ -9,3 +9,4 @@ export const ContactUs = () => {
     </>
   )
 }
+export default ContactUs

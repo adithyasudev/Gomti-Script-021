@@ -1,17 +1,20 @@
 import "./App.css";
-import Services from "./Pages/Services";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { Suspense } from "react";
 
-import "./App.css";
-import { ContactUs } from "./Pages/ContactUs";
-import CareerPage from "./Pages/CareerPage";
-import Events from "./Pages/Events";
-import Home from "./Pages/Home";
-import Portfolio from "./Pages/Portfolio";
-import { Route, Routes } from "react-router";
-import { About } from "./Pages/About";
+const Home = React.lazy(() => import('./Pages/Home'));
+const About = React.lazy(() => import('./Pages/About'));
+const ContactUs = React.lazy(() => import('./Pages/ContactUs'));
+const CareerPage = React.lazy(() => import('./Pages/CareerPage'));
+const Services = React.lazy(() => import('./Pages/Services'));
+const Portfolio = React.lazy(() => import('./Pages/Portfolio'));
+const Events = React.lazy(() => import('./Pages/Events'));
+
+const LoadingFallback = () => <div>Loading...</div>;
+
 function App() {
   return (
-    <>
+    <Suspense fallback={<LoadingFallback />}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,7 +24,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/events" element={<Events />} />
       </Routes>
-    </>
+    </Suspense>
   );
 }
 
