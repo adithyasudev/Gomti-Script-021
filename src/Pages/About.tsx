@@ -4,9 +4,6 @@ import { About2 } from '../Components/About2'
 import { About4 } from '../Components/About4'
 import { About5 } from '../Components/About5'
 import { About3 } from '../Components/About3'
-
-
-
  const About = () => {
   return (
     <>
