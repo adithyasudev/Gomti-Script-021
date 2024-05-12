@@ -4,11 +4,20 @@
 import { Stack } from "@chakra-ui/react";
 import Style from "./LandingPage.module.css";
 import Bluebox from "./Bluebox";
-import useScrollAnimation from "../customHooks/animation";
 import CustomButton from "./button";
+import { useEffect, useState } from "react";
 
 const LandingPage = () => {
-  const isVisible = useScrollAnimation();
+
+
+  let [animated,setAnimated] = useState(false);
+  useEffect(()=>
+ {
+   const timer = setTimeout(() => {
+     setAnimated(true);
+   }, 300);
+   return () => clearTimeout(timer);
+ },[])
   return (
     <>
     <Stack spacing={2}>
@@ -24,7 +33,7 @@ const LandingPage = () => {
       >
         <div className={Style.portfolio} style={{margin:"auto"}}>
           <Bluebox />
-          <div className={`animated-text ${isVisible ? "animated" : ""}`}>
+          <div className={`animated-text ${animated ? "animated" : ""}`}>
             <p style={{fontWeight: '400'}}>
               WORLD-CLASS PERFORMANCE SERVICES O HELP BRANDS GROW IN THE
               HYPERCONNECTED
@@ -44,14 +53,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      
     </Stack>
-
-
-  
-   
-
-    
    </>
   );
 };

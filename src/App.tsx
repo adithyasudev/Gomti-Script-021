@@ -1,34 +1,32 @@
 
 
 
-// import './App.css'
-// import Bluebox from './Components/Bluebox'
-// import { ContactUs1 } from './Components/ContactUs1'
 
-
-import AdminDashboard from "./Pages/AdminDashboard";
-import Events from "./Pages/Events";
-import Portfolio from "./Pages/Portfolio";
+import './App.css'
+import Services from './pages/Services'
 
 
 
-//   return (
-//     <>
-//       <p>Hello</p>
-//   <ContactUs1 />
-//     </>
-//   )
-// }
-
-// export default App
-// src/App.tsx
-
+import './App.css';
+import { ContactUs } from './pages/ContactUs';
+import CareerPage from './pages/CareerPage';
+import Events from './pages/Events';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import { Route, Routes } from 'react-router';
 function App() {
   return (
     <>
-    <AdminDashboard />
-    <Portfolio />
-   <Events />
+<Routes>
+<Route path="/" element={<Home />}/>
+{/* <Route path="./about" /> */}
+<Route path="/contactus" element={<ContactUs/>}/>
+<Route path="/career" element={<CareerPage/>}/>
+<Route path="/services" element={<Services/>} />
+<Route path="/portfolio" element={<Portfolio/>} />
+<Route path="/events" element={<Events/>} />
+</Routes>
+
     </>
   )
 }
