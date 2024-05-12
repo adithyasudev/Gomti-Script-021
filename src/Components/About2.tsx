@@ -20,7 +20,7 @@ export const About2 = () => {
         clients with shrewd and customized solutions.<br></br><span>Beyond Boundaries</span> is a firm that
           provides staffing solutions for any technology, and it was created by
           a team of seasoned IT professionals. This trust has motivated them
-          to run ConvexTech to give high-quality services to our customers. To
+          to run Beyond Boundries to give high-quality services to our customers. To
           avoid any issues during our client meetings, our team is focused on
           openness and integrity.</p>
     </div>

@@ -23,9 +23,9 @@ const Footer = () => {
           flexWrap:"wrap"
         }}>
           <div style={{ width: "400px", marginBottom: "20pxf",marginLeft:"20px"}}>
-            <img src="https://picjj.com/images/2024/05/10/FKc4a.jpeg"></img>
+            <img src="https://picjj.com/images/2024/05/11/hQZkl.jpeg" style={{width:'5vw', marginBottom:'2vh'}}></img>
             <p style={{marginLeft:"10px"}}>
-              We at ConvexTech aim to create 2<br />
+              We at Beyond Boundries aim to create  <br />2
               Million Employment Opportunities
               <br />
               by year 2023 in pakistan.
@@ -103,8 +103,8 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p style={{ marginTop: "40px", marginLeft: "30px" }}>
-            ConvexTech is operated by ConvexTech Insight Pvt Ltd. Copyright 2020 -
+          <p style={{ display:'flex',justifyContent:'center' ,marginTop:'2vh'}}>
+            Beyond boundries is operated by Beyond boundries Insight Pvt Ltd. Copyright 2020 -
             All right Recived
           </p>
         </div>

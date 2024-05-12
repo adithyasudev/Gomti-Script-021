@@ -37,11 +37,12 @@ const EventCard = () => {
     //               <p>{event.date}</p>
     //           </figcaption>
     //     </>
-      <div style={{display:'flex',color:'white', justifyContent:'space-around', flexWrap:"wrap",gap:"20px"}}>
+   
+  <div style={{display:'flex',color:'white', justifyContent:'space-around', flexWrap:"wrap",gap:"6px", backgroundColor:'#bee0f0'}} >
        
             {events.map((event:eventcard,index) => (
               //  if({event.title}%2==0){
-            <div style={{backgroundImage:`url(${event.image})` ,color:'white',height:"230px" , width:"33vw" ,backgroundRepeat:'no-repeat',paddingTop:"160px",paddingLeft:"20px" ,backgroundSize:'cover', backgroundPosition:'center'}}>
+            <div style={{backgroundImage:`url(${event.image})` ,color:'white',height:"230px" , width:"33vw" ,backgroundRepeat:'no-repeat',paddingTop:"160px",paddingLeft:"20px" ,backgroundSize:'cover', backgroundPosition:'center'}}  className={Style.hovereve}>
                  <h2 style={{fontWeight:"bold"}}>{event.title}</h2>
                  <p>{event.discription}</p>
               

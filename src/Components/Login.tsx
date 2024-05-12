@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
-
 import { Alert, AlertDescription, AlertIcon, AlertTitle, Button, Input, InputGroup, InputRightElement, Stack, useToast } from "@chakra-ui/react"
 import { useDispatch, useSelector } from 'react-redux';
 import { loginAdmin, loginUser } from '../redux/asyncFunctions';
+import Style from './Sartik.module.css'
 
 
 //typescript
@@ -80,7 +80,7 @@ const Login = () => {
   <Button colorScheme='teal' variant='outline ' >
     Forgot Password
   </Button>
-  <p>Loin as <span onClick={handelAdminlogin}>admin</span></p>
+  <p style={{display:'flex',justifyContent:'center'}}>Loin as <span onClick={handelAdminlogin} style={{color:'blue', marginLeft:'0.2vw'}} className={Style.hoveradmin} >admin</span></p>
   
 
   </Stack>

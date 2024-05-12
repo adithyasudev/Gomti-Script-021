@@ -206,11 +206,12 @@
   .teamsocial{
     display: flex;
     justify-content: space-around;
+    align-items: center;
      gap: 20px;
   }
 
   .mail{
-    margin-top: 5px;
+    margin-top: 0px;
   }
 
   .teaminfo {
