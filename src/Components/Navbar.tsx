@@ -1,5 +1,5 @@
 
-import {  NavLink } from 'react-router-dom'
+import {  Link, NavLink } from 'react-router-dom'
 import Styles from './Navlink.module.css'
 import InitialFocus from './Login-form'
 import {  useSelector } from 'react-redux'
@@ -18,28 +18,33 @@ const Navbar = () => {
 
 
     <div>
-        <img src="https://picjj.com/images/2024/05/11/hQZkl.jpeg" width="80px" alt="" />
+
+    <Link to="/">
+    <img src="https://picjj.com/images/2024/05/11/hQZkl.jpeg" width="80px" alt="" />
+    </Link>
+       
     </div>
     <div style={{height:"80px",display:"flex",alignItems:"center"} }>
+      
         <NavLink style={({isActive})=>{ 
-    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="./">About</NavLink>
+    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/portfolio">Portfolio</NavLink>
         <NavLink style={({isActive})=>{ 
-    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="./portfolio">Portfolio</NavLink>
+    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/career">Career</NavLink>
         <NavLink style={({isActive})=>{ 
-    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="./career">Career</NavLink>
+    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/services">Services</NavLink>
         <NavLink style={({isActive})=>{ 
-    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="./services">Services</NavLink>
+    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/events">Events</NavLink>
         <NavLink style={({isActive})=>{ 
-    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="./events">Events</NavLink>
-        <NavLink style={({isActive})=>{ 
-    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="./contactus">Contact us</NavLink>
+    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/contactus">Contact us</NavLink>
+      <NavLink style={({isActive})=>{ 
+    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/about">About</NavLink>
     </div>
 
 
 
 <div style={{height:"80px",display:"flex",alignItems:"center"}}>
 {!loggedinUser &&!loggedinAdmin&&(<InitialFocus/>)} 
-    {loggedinAdmin&& (<Sidebar/>)} 
+    {(loggedinAdmin||loggedinUser)&& (<Sidebar/>)} 
 </div>
 
     </div>

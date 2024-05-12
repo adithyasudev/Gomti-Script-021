@@ -8,7 +8,6 @@ interface eventcard{
     image:string;
     title:string;
     discription:string;
-    date:string;
 }
 
 const EventCard = () => {
@@ -38,18 +37,16 @@ const EventCard = () => {
     //               <p>{event.date}</p>
     //           </figcaption>
     //     </>
-      <div style={{display:'flex',color:'white', justifyContent:'space-between'}}>
+      <div style={{display:'flex',color:'white', justifyContent:'space-around', flexWrap:"wrap",gap:"20px"}}>
        
-            {events.map((event:eventcard) => (
+            {events.map((event:eventcard,index) => (
               //  if({event.title}%2==0){
-            <div style={{backgroundImage:`url(${event.image})` ,color:'white', height:'20vh', width:'10vw',backgroundRepeat:'no-repeat' ,backgroundSize:'cover', backgroundPosition:'center'}}>
-                 <h5>{event.title}</h5>
+            <div style={{backgroundImage:`url(${event.image})` ,color:'white',height:"230px" , width:"33vw" ,backgroundRepeat:'no-repeat',paddingTop:"160px",paddingLeft:"20px" ,backgroundSize:'cover', backgroundPosition:'center'}}>
+                 <h2 style={{fontWeight:"bold"}}>{event.title}</h2>
                  <p>{event.discription}</p>
-                 <p>{event.date}</p>
-
+              
           </div>
 
-        
          ))}
 
 </div>
