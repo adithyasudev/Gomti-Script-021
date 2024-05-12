@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Bluebox from './Bluebox'
 import Style from './Sartik.module.css'
 import useScrollAnimation from '../customHooks/animation';
