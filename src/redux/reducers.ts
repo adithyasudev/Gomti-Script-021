@@ -10,6 +10,9 @@ export const ADMIN_REQUEST = "ADMIN_REQUEST";
 export const ADMIN_SUCCESS = "ADMIN_SUCCESS";
 export const ADMIN_FAILURE = "ADMIN_FAILURE";
 
+export const LOGOUT_REQUEST = "LOGOUT_REQUEST";
+export const ADMIN_LOGOUT = "ADMIN_LOGOUT";
+
 export const loginRequest = () => ({
   type: ActionTypes.LOGIN_REQUEST,
 });
@@ -74,6 +77,13 @@ export const loginReducer = (state = initialLoginState, action: Actiontype) => {
         loading: false,
         error: action.payload,
       };
+      case LOGOUT_REQUEST:
+        return {
+          ...state,
+          isAuthenticated: false,
+          loading: false,
+
+        };
     default:
       return state;
   }
@@ -105,6 +115,12 @@ export const adminReducer = (state = initialLoginState, action: Actiontype) => {
         loading: false,
         error: action.payload,
       };
+      case ADMIN_LOGOUT: 
+      return{
+        ...state,
+        isAuthenticated: false,
+        loading: false,
+      }
     default:
       return state;
   }

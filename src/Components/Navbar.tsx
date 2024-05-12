@@ -3,6 +3,7 @@ import {  NavLink } from 'react-router-dom'
 import Styles from './Navlink.module.css'
 import InitialFocus from './Login-form'
 import {  useSelector } from 'react-redux'
+import { Sidebar } from './SIdebar'
 const Navbar = () => {
     const loggedinUser = useSelector(state=>state.user.isAuthenticated); 
     const loggedinAdmin= useSelector(state=>state.admin.isAuthenticated); 
@@ -35,7 +36,7 @@ const Navbar = () => {
 
 <div style={{height:"80px",display:"flex",alignItems:"center"}}>
 {!loggedinUser &&!loggedinAdmin&&(<InitialFocus/>)} 
-    {loggedinAdmin&& (<button>Admin Dashboard</button>)} 
+    {loggedinAdmin&& (<Sidebar/>)} 
 </div>
     </div>
 </>

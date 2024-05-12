@@ -7,7 +7,7 @@ import { ActionTypes, User } from "./types";
 import { Dispatch } from "redux";
 
 export interface Actiontype {
-  type: ActionTypes.ADMIN_FAILURE | ActionTypes.ADMIN_REQUEST |ActionTypes.ADMIN_SUCCESS |ActionTypes.LOGIN_FAILURE |ActionTypes.LOGIN_REQUEST |ActionTypes.LOGIN_SUCCESS;
+  type: ActionTypes.ADMIN_FAILURE | ActionTypes.ADMIN_REQUEST |ActionTypes.ADMIN_SUCCESS |ActionTypes.LOGIN_FAILURE |ActionTypes.LOGIN_REQUEST |ActionTypes.LOGIN_SUCCESS|ActionTypes.LOGOUT_REQUEST|ActionTypes.ADMIN_LOGOUT;
   payload?: User | string | null;
 }
 export interface jsonUser{
