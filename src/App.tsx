@@ -1,6 +1,7 @@
 
 
 
+
 import './App.css'
 import Services from './pages/Services'
 
@@ -25,6 +26,7 @@ function App() {
 <Route path="/portfolio" element={<Portfolio/>} />
 <Route path="/events" element={<Events/>} />
 </Routes>
+
     </>
   )
 }
