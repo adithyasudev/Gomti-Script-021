@@ -4,7 +4,7 @@ import Styles from './Navlink.module.css'
 import InitialFocus from './Login-form'
 import {  useSelector } from 'react-redux'
 import { Sidebar } from './SIdebar'
-import { Alert,  AlertIcon, Spinner} from '@chakra-ui/react'
+import { Alert,  AlertIcon, Center, Spinner} from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 const Navbar = () => {
     const loggedinUser = useSelector(state=>state.user.isAuthenticated); 
@@ -27,13 +27,13 @@ const Navbar = () => {
  
 <>
 
-    <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5" ,position:'fixed',top:'0px',right:'0px',left:'0px' ,width:'100vw',zIndex:'1'}}>
+    <div style={{display:"flex", justifyContent:"space-around",backgroundColor:"#c9d3d5" ,position:'fixed',top:'0px',right:'0px',left:'0px' ,width:'100vw',zIndex:'1', flexWrap:'wrap', alignItems:'Center'}}>
 
 
     <div>
 
     <Link to="/">
-    <img src="https://picjj.com/images/2024/05/11/hQZkl.jpeg" width="80px" alt="" />
+    <img src="https://picjj.com/images/2024/05/11/hQZkl.jpeg" width="75vw" alt="" />
     </Link>
        
     </div>
