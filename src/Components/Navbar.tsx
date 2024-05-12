@@ -43,9 +43,7 @@ const Navbar = () => {
 {!loggedinUser &&!loggedinAdmin&&(<InitialFocus/>)} 
     {(loggedinAdmin||loggedinUser)&& (<Sidebar/>)} 
 </div>
-
     </div>
-
     <div style={{height:'80px', backgroundColor:"white",width:"100vw"} }> 
     </div>
 </>
