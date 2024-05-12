@@ -65,7 +65,6 @@ export const Carrercard = () => {
             bg='blackAlpha.300'
             backdropFilter='blur(10px) hue-rotate(90deg)'
            
-
           />
           <ModalContent w="1000vw" className={Style.modalContent}>
             <ModalHeader className={Style.header} >Job Application for: {selectedJob.title}</ModalHeader>

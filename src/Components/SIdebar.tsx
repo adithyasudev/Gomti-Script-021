@@ -1,15 +1,17 @@
 import {
-    Drawer,
-    DrawerBody,
-   Button,
-    DrawerHeader,
-    DrawerOverlay,
-    DrawerFooter,
-    DrawerContent,
-    DrawerCloseButton,
-    useDisclosure 
+  Drawer,
+  DrawerBody,
+  Button,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerFooter,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure,
+} from "@chakra-ui/react";
 
-  } from '@chakra-ui/react'
+import { useDispatch, useSelector } from "react-redux";
+
 
 
   import { useDispatch, useSelector } from "react-redux"
@@ -18,12 +20,13 @@ import {
 
 import AdminDashboard from '../Pages/AdminDashboard'
 
+
 import { ADMIN_LOGOUT, LOGOUT_REQUEST } from "../redux/reducers";
 import UserDasbord from './UserDasbord';
 
-
-
 export function Sidebar() {
+
+
     const { isOpen, onOpen, onClose } = useDisclosure();
     const adminLoggedin = useSelector(state=>state.admin.isAuthenticated)
     const userloggedin = useSelector(state=>state.user.isAuthenticated)
@@ -62,3 +65,4 @@ export function Sidebar() {
       </>
     )
   }
+
