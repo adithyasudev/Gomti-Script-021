@@ -35,7 +35,7 @@ const Navbar = () => {
     <div>
 
     <Link to="/">
-    <img src="https://picjj.com/images/2024/05/11/hQZkl.jpeg" width="75vw" alt="" />
+    <img src="https://picjj.com/images/2024/05/11/hQZkl.jpeg" width="70vw" alt="" />
     </Link>
        
     </div>

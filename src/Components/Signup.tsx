@@ -125,7 +125,11 @@ import { User } from '../redux/types';
           <AlertDialogOverlay>
             <AlertDialogContent>
               <AlertDialogHeader fontSize='lg' fontWeight='bold'>
+
+               User Signed Up Sucessfully
+
                 User Signedup
+
               </AlertDialogHeader>
 
               <AlertDialogBody>

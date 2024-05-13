@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loginAdmin, loginUser } from '../redux/asyncFunctions';
 import Style from './Sartik.module.css'
 import { Store } from '../redux/types';
+import { ThunkDispatch } from 'redux-thunk';
 
 
 //typescript
@@ -30,24 +31,20 @@ const Login = () => {
   // let userDetails: LoginDetail = { email: "", password: "" };
 
  const handellogin=()=>{
-  if(EmailInput.current && EmailInput.current.value && password.current && password.current.value){
-   console.log(EmailInput.current.value);
-   console.log(password.current.value);
+  if (EmailInput.current && EmailInput.current.value && password.current && password.current.value) {
+    const userDetails: LoginDetail = { email: EmailInput.current.value, password: password.current.value };
 
-  const  userDetails : LoginDetail ={email:EmailInput.current.value, password:password.current.value}
-
-     dispatch(loginUser(userDetails));  
+    // Cast dispatch to ThunkDispatch for type safety
+    dispatch (loginUser(userDetails));  
   }
    
  }
  const handelAdminlogin=()=>{
-  if(EmailInput.current && EmailInput.current.value && password.current && password.current.value){
-   console.log(EmailInput.current.value);
-   console.log(password.current.value);
+  if (EmailInput.current && EmailInput.current.value && password.current && password.current.value) {
+    const userDetails: LoginDetail = { email: EmailInput.current.value, password: password.current.value };
 
-  const  userDetails : LoginDetail ={email:EmailInput.current.value, password:password.current.value}
-
-     dispatch(loginAdmin (userDetails));  
+    // Cast dispatch to ThunkDispatch for type safety
+    dispatch(loginAdmin(userDetails));  
   }
    
  }

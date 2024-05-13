@@ -10,17 +10,8 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-
-
-
-
   import { useDispatch, useSelector } from "react-redux"
-
-
-
 import AdminDashboard from '../Pages/AdminDashboard'
-
-
 import { ADMIN_LOGOUT, LOGOUT_REQUEST } from "../redux/reducers";
 import UserDasbord from './UserDasbord';
 import { Store } from "../redux/types";

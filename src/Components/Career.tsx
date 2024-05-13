@@ -1,7 +1,7 @@
 import { Stack } from "@chakra-ui/react";
 import Style from "./Career.module.css";
 import Bluebox from "./Bluebox";
-// import useScrollAnimation from "../customHooks/animation";
+
 import CustomButton from "./button";
 import { useEffect, useState } from "react";
 
