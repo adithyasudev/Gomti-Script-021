@@ -7,7 +7,11 @@ Welcome to Beyond Boundary, your gateway to limitless career opportunities! At B
 Frontend | Backend 
 
 ## Deplolyed App
+Frontend: https://66426764496fcb16ddba4682--chipper-concha-3265d2.netlify.app/
+
+
 Backend: https://gomti-script-021.onrender.com/
+
 
 ## Team Name :- Gomti-Script-021
 
