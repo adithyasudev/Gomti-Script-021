@@ -18,7 +18,6 @@ export interface User{
    admin:LoginState;
  }
 
-
 // ActionTypes for Redux actions
 export enum ActionTypes {
     LOGIN_REQUEST = "LOGIN_REQUEST",
