@@ -16,7 +16,7 @@ Backend: https://gomti-script-021.onrender.com/
 
 ### Team members:-
 
-1- Aditya Sudhev
+1- Adithya Sudev
 
 2-Tushar Bisht
 
