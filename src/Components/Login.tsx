@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loginAdmin, loginUser } from '../redux/asyncFunctions';
 import Style from './Sartik.module.css'
 import { Store } from '../redux/types';
-import { ThunkDispatch } from 'redux-thunk';
+
 
 
 //typescript
