@@ -6,7 +6,7 @@ export const Main2 = () => {
     <div className= {style1.container}>
         <div >
             <div><h2 style={{color:'blue',fontSize:'55px'}}>TESTIMONIALS</h2></div>
-        <div><h1 style={{fontSize:'75px'}}>What Customers Saying</h1></div>
+        <div><h1 style={{fontSize:'30px'}}>What Customers Saying</h1></div>
         <br />
         <div><p>Over 25 years working in IT services developing software <br/>
 applications and mobile apps for clients all over the world.</p></div>
@@ -22,7 +22,7 @@ applications and mobile apps for clients all over the world.</p></div>
           Defacto lingo est igpay atinlay. Marquee selectus non <br />
           provisio incongruous feline nolo contendre."
           <br />
-          <h1 style={{color:'orange',fontSize:'65px'}}>Hiddleston</h1>
+          <h1 style={{color:'orange',fontSize:'30px'}}>Hiddleston</h1>
           </h2>
           </div>
           <div className={style1.cards}>
@@ -33,7 +33,7 @@ applications and mobile apps for clients all over the world.</p></div>
           Defacto lingo est igpay atinlay. Marquee selectus non <br />
           provisio incongruous feline nolo contendre."
           <br />
-          <h1 style={{color:'orange',fontSize:'65px'}}>Leto</h1>
+          <h1 style={{color:'orange',fontSize:'30px'}}>Leto</h1>
           </h2>
           </div>
               </div>
