@@ -1,87 +1,66 @@
 import axios from "axios";
-
-
-
-import { adminFailure, adminRequest,  adminSuccess,  loginFailure, loginRequest, loginSuccess } from "./reducers";
-import { ActionTypes, User } from "./types";
+import { ThunkAction } from 'redux-thunk'; // Import ThunkAction
+import { adminFailure, adminRequest, adminSuccess, loginFailure, loginRequest, loginSuccess } from "./reducers";
+import { ActionTypes, Store, User } from "./types";
 import { Dispatch } from "redux";
 
 export interface Actiontype {
-  type: ActionTypes.ADMIN_FAILURE | ActionTypes.ADMIN_REQUEST |ActionTypes.ADMIN_SUCCESS |ActionTypes.LOGIN_FAILURE |ActionTypes.LOGIN_REQUEST |ActionTypes.LOGIN_SUCCESS|ActionTypes.LOGOUT_REQUEST|ActionTypes.ADMIN_LOGOUT;
+  type: ActionTypes;
   payload?: User | string | null;
 }
-export interface jsonUser{
+
+export interface jsonUser {
   id: number;
-name: string;
-number: number;
-email: string;
-password: string
+  name: string;
+  number: number;
+  email: string;
+  password: string;
 }
 
-export interface jsonAdmin{
+export interface jsonAdmin {
   id: number;
-email: string;
-password: string
+  email: string;
+  password: string;
 }
 
+// Define the ThunkAction type for your async action creators
+type ThunkResult<R> = ThunkAction<R, Store, undefined, Actiontype>;
 
-
-export const loginUser = (credentials:User) => async (dispatch:Dispatch<Actiontype> )=> {
-  try {
-  
-
+// Adjust loginUser to use ThunkAction
+export const loginUser = (credentials: User): ThunkResult<void> => {
+  return async (dispatch: Dispatch) => {
     dispatch(loginRequest());
 
-    const response = await axios.get('https://gomti-script-021.onrender.com/user');
-   
-    const user = response.data;
-let valid = false;
-    user.forEach((element:jsonUser)=> {
-      if(element.email == credentials.email && element.password == credentials.password){
-        valid=true;
-      }
-    });
-    if (valid) {
-      dispatch(loginSuccess(credentials));
-    } else {
-      dispatch(loginFailure('Invalid email or password'));
-    }
-  } catch (error:any) {
-    // Dispatch login failure action with error message
-    dispatch(loginFailure(error));
-  }
-};
-//admin login
-export const loginAdmin = (credentials:User) => async (dispatch:Dispatch<Actiontype>) => {
-  try {
-  
+    try {
+      const response = await axios.get('https://gomti-script-021.onrender.com/user');
+      const users: jsonUser[] = response.data;
+      let valid = users.some(user => user.email === credentials.email && user.password === credentials.password);
 
+      if (valid) {
+        dispatch(loginSuccess(credentials));
+      } else {
+        dispatch(loginFailure('Invalid email or password'));
+      }
+    } catch (error: any) {
+      dispatch(loginFailure(error.message));
+    }
+  };
+};
+// Adjust loginAdmin to use ThunkAction
+export const loginAdmin = (credentials: User): ThunkResult<void> => async (dispatch: Dispatch) => {
+  try {
     dispatch(adminRequest());
 
     const response = await axios.get('https://gomti-script-021.onrender.com/admin');
-   
-    const user = response.data;
+    const admins = response.data;
+    let valid = admins.some((admin: jsonAdmin) => admin.email === credentials.email && admin.password === credentials.password);
 
-    let valid = false;
-    user.forEach((element:jsonAdmin) => {
-      if(element.email == credentials.email && element.password == credentials.password){
-        valid=true;
-      }
-    });
     if (valid) {
       dispatch(adminSuccess(credentials));
     } else {
       dispatch(adminFailure('Invalid email or password'));
     }
-  } catch (error:any) {
-    // Dispatch login failure action with error message
-    dispatch(loginFailure(error));
+  } catch (error: any) {
+    dispatch(adminFailure(error.message));
   }
 };
-
-
-
-
-
-
-

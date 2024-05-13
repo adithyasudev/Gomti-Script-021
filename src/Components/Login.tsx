@@ -22,35 +22,32 @@ const Login = () => {
   const EmailInput = useRef<HTMLInputElement>(null);
   const  password = useRef<HTMLInputElement>(null);
 
-  const loggedinUser = useSelector((state: Store ) => state.user.isAuthenticated);
+  const loggedinUser = useSelector((state: Store) => state.user.isAuthenticated);
 
 
   //object creation
 
   // let userDetails:userDetail={ email="" , password=""}
-  let userDetails: LoginDetail = { email: "", password: "" };
+  // let userDetails: LoginDetail = { email: "", password: "" };
 
  const handellogin=()=>{
-  if(EmailInput.current && EmailInput.current.value && password.current && password.current.value){
-   console.log(EmailInput.current.value);
-   console.log(password.current.value);
+  if (EmailInput.current && EmailInput.current.value && password.current && password.current.value) {
+    const userDetails: LoginDetail = { email: EmailInput.current.value, password: password.current.value };
 
-  userDetails={email:EmailInput.current.value, password:password.current.value}
-     dispatch(loginUser(userDetails));  
+    // Cast dispatch to ThunkDispatch for type safety
+    dispatch (loginUser(userDetails));  
   }
    
  }
-
  const handelAdminlogin=()=>{
-  if(EmailInput.current && EmailInput.current.value && password.current && password.current.value){
-    console.log(EmailInput.current.value);
-    console.log(password.current.value);
- 
-   userDetails={email:EmailInput.current.value, password:password.current.value}
-   dispatch(loginAdmin(userDetails));
-  }
- }
+  if (EmailInput.current && EmailInput.current.value && password.current && password.current.value) {
+    const userDetails: LoginDetail = { email: EmailInput.current.value, password: password.current.value };
 
+    // Cast dispatch to ThunkDispatch for type safety
+    dispatch(loginAdmin(userDetails));  
+  }
+   
+ }
   return (
     <>
       <Stack spacing={5}>

@@ -1,6 +1,6 @@
 import { Actiontype } from "./asyncFunctions";
 import { ActionTypes, User } from "./types";
-
+// import { ThunkAction } from 'redux-thunk';
 // Define Login reducer function
 export const LOGIN_REQUEST = "LOGIN_REQUEST";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
@@ -12,6 +12,7 @@ export const ADMIN_FAILURE = "ADMIN_FAILURE";
 
 export const LOGOUT_REQUEST = "LOGOUT_REQUEST";
 export const ADMIN_LOGOUT = "ADMIN_LOGOUT";
+
 
 export const loginRequest = () => ({
   type: ActionTypes.LOGIN_REQUEST,
@@ -41,14 +42,14 @@ export const adminFailure = (error: string | null) => ({
   payload: error,
 });
 
-
 export interface LoginState {
   isAuthenticated: boolean;
-  data: string;
+  data: string; // Change the type according to your actual data type
   loading: boolean;
-  error: string | null;
+  error: any; // Change the type according to your error handling
 }
-const initialLoginState:LoginState = {
+
+const initialLoginState: LoginState = {
   isAuthenticated: false,
   data: "",
   loading: false,
