@@ -7,7 +7,6 @@ Welcome to Beyond Boundary, your gateway to limitless career opportunities! At B
 Frontend | Backend 
 
 ## Deplolyed App
-Frontend:https://660e695c7751b065e3797062--imaginative-pixie-6e83c9.netlify.app/
 Backend: https://gomti-script-021.onrender.com/
 
 ## Team Name :- Gomti-Script-021
@@ -34,8 +33,8 @@ Backend: https://gomti-script-021.onrender.com/
 
 ## Ui Layout
   **Home Page**
-
-![UI35](https://github.com/adithyasudev/Gomti-Script-021/assets/107359448/07fffb1a-efc4-491b-9c02-e26990d3afe3)
+![home35](https://github.com/adithyasudev/Gomti-Script-021/assets/107359448/27e7bc4c-ce20-4559-bd55-c4d10210bbd8)
+![Admin35](https://github.com/adithyasudev/Gomti-Script-021/assets/107359448/68d6d34e-56a0-4c1b-abab-f500745b42cb)
 
 
 
@@ -52,12 +51,12 @@ List out the key features of your application.
 
 
 ## Installation & Getting started
-Detailed instructions on how to install, configure, and get the project running
+Detailed instructions on how to install, configure, and get the project running:
+- git clone 
+- cd Gomti-Script-021
+- npm i 
+- npm run dev
 
-git clone  
-cd Gomti-Script-021
-npm i 
-npm run dev
 
 
 ## Usage
@@ -65,12 +64,12 @@ Beyond boundries  is a outsourcing website
 
 ## Credentials
 For login  as a admin use the following credentials:
--Email: admin;
--Password: admin1234;
+- Email: admin
+- Password: admin1234
 
  For login  as a user use the following credentials:
--Email: sartikkumar@gmail.com;
--Password: Sartik123;
+- Email: sartikkumar@gmail.com
+- Password: Sartik123
 ## APIs Used
 https://gomti-script-021.onrender.com/
 
@@ -89,5 +88,8 @@ List and provide a brief overview of the technologies used in the project.
 
 
 Thank you for taking the time to look at our project! Hope you like it!
+
+
+
   **Happy Watching!**
 
