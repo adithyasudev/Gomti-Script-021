@@ -69,6 +69,7 @@
    
     width: 60vw;
   }
+  
   .h1 {
     color: rgb(2, 10, 100);
       animation: slideInLeft 1.5s ease forwards; 
@@ -144,8 +145,8 @@
     margin-left: 40px;
     animation: slideInLeft 1.5s ease forwards;
     animation-delay: 1s;
-      font-weight: bolder;
-    font-size: xx-large;
+      /* font-weight: bolder; */
+    font-size:medium;
   }
 
   .span {

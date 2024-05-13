@@ -41,18 +41,19 @@ const Navbar = () => {
     </div>
     <div style={{height:"80px",display:"flex",alignItems:"center"} }>
       
-        <NavLink style={({isActive})=>{ 
-    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/portfolio">Portfolio</NavLink>
-        <NavLink style={({isActive})=>{ 
+    <NavLink style={({isActive})=>{ 
     return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/career">Career</NavLink>
-        <NavLink style={({isActive})=>{ 
-    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/services">Services</NavLink>
+       <NavLink style={({isActive})=>{ 
+    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/portfolio">Portfolio</NavLink>
+        
         <NavLink style={({isActive})=>{ 
     return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/events">Events</NavLink>
         <NavLink style={({isActive})=>{ 
     return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/contactus">Contact us</NavLink>
       <NavLink style={({isActive})=>{ 
     return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/about">About</NavLink>
+    <NavLink style={({isActive})=>{ 
+    return isActive?{color:"#5a8a9a"}:{color:"black"}}} className={Styles.navbarlink} to="/services">Services</NavLink>
     </div>
 
 
