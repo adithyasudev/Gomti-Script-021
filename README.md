@@ -1,7 +1,7 @@
 ###-Gomti-Script-021
 
-## Introduction
-
+## Introduction 
+Welcome to Beyond Boundaries, your gateway to limitless career opportunities! At Beyond Boundaries, we believe that talent knows no borders, and neither should your job search. We specialize in connecting skilled professionals with exciting job opportunities from around the globe. Say goodbye to limitations and let us help you find your next career adventure. Explore beyond boundaries with us today!"
 
 ## Project Type
 Frontend | Backend 
