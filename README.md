@@ -7,7 +7,7 @@ Welcome to Beyond Boundary, your gateway to limitless career opportunities! At B
 Frontend | Backend 
 
 ## Deplolyed App
-Frontend: https://66426764496fcb16ddba4682--chipper-concha-3265d2.netlify.app/
+Frontend: https://66427e776c30d72d855065c1--rainbow-lebkuchen-11d421.netlify.app/
 
 
 Backend: https://gomti-script-021.onrender.com/
@@ -50,7 +50,8 @@ List out the key features of your application.
 
 - Sticky Navbar: while scrolling the navbar sticks at the top of the view height.
 - login: user can login to website.
-- Admin Dashbord: admin can add job opening and events as well as remove and close them
+- An Email will be sent to user once he sign up.
+- Admin Dashbord: admin can add job openings and events as well as remove and close them
 - Data Fetching and Display: Use axion to fetch data from APIs or databases and dynamically display it on our website. This could include fetching an, product listings, user profiles, etc.
 
 
