@@ -1,89 +1,104 @@
-import React, { useRef } from 'react'
-import { Alert, AlertDescription, AlertIcon, AlertTitle, Button, Input, InputGroup, InputRightElement, Stack } from "@chakra-ui/react"
+import React, { useRef, useEffect, useState } from 'react';
+import { Alert, AlertDescription, AlertIcon, AlertTitle, Button, Input, InputGroup, InputRightElement, Stack } from "@chakra-ui/react";
 import { useDispatch, useSelector } from 'react-redux';
-import { loginAdmin, loginUser } from '../redux/asyncFunctions';
-import Style from './Sartik.module.css'
+import { jsonAdmin, jsonUser } from '../redux/asyncFunctions';
+import Style from './Sartik.module.css';
 import { Store } from '../redux/types';
-
-
+import { loginFailure, loginSuccess } from '../redux/reducers';
 
 //typescript
-interface LoginDetail{
-  email:string;
-  password:string;
+interface LoginDetail {
+  email: string;
+  password: string;
 }
 
-
-
 const Login = () => {
-  const [show, setShow] = React.useState(false)
-  const handleClick = () => setShow(!show)
-  let dispatch =useDispatch()
+  const [show, setShow] = React.useState(false);
+  const handleClick = () => setShow(!show);
+  let dispatch = useDispatch();
   const EmailInput = useRef<HTMLInputElement>(null);
-  const  password = useRef<HTMLInputElement>(null);
+  const passwordInput = useRef<HTMLInputElement>(null);
+  const [userData, setUserData] = useState<jsonUser[]|null>(null);
+  const [adminData, setAdminData] = useState<jsonAdmin[]|null>(null); 
 
   const loggedinUser = useSelector((state: Store) => state.user.isAuthenticated);
 
+  const handellogin = () => {
+    if (EmailInput.current && EmailInput.current.value && passwordInput.current && passwordInput.current.value&&userData) {
+      const userDetails: LoginDetail = { email: EmailInput.current.value, password: passwordInput.current.value };
+      let valid = userData.some(user => user.email === userDetails.email && user.password === userDetails.password);
+      if(valid){
+        dispatch(loginSuccess(userDetails));
+      }else{
+        dispatch(loginFailure('Invalid email or password'));
+      }
+    }
+  };
 
-  //object creation
+  const handelAdminlogin = () => {
+    if (EmailInput.current && EmailInput.current.value && passwordInput.current && passwordInput.current.value&&adminData) {
+      const userDetails: LoginDetail = { email: EmailInput.current.value, password: passwordInput.current.value };
+      let valid = adminData.some(user => user.email === userDetails.email && user.password === userDetails.password);
+      if(valid){
+        dispatch(loginSuccess(userDetails));
+      }else{
+        dispatch(loginFailure('Invalid email or password'));
+      }
+    }
+  };
 
-  // let userDetails:userDetail={ email="" , password=""}
-  // let userDetails: LoginDetail = { email: "", password: "" };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Call your async function to fetch user data
+        const response1 = await fetch('https://gomti-script-021.onrender.com/user');
+        const response2 = await fetch('https://gomti-script-021.onrender.com/admin');
+        const usData = await response1.json();
+        const adData = await response2.json();
+        setUserData(usData);
+        setAdminData(adData);
+      } catch (error) {
+        console.error('Error fetching user data:', error);
+      }
+    };
 
- const handellogin=()=>{
-  if (EmailInput.current && EmailInput.current.value && password.current && password.current.value) {
-    const userDetails: LoginDetail = { email: EmailInput.current.value, password: password.current.value };
+    fetchData(); // Call fetchData when component mounts
+  }, []); // Empty dependency array to ensure useEffect runs only once
 
-    // Cast dispatch to ThunkDispatch for type safety
-    dispatch (loginUser(userDetails));  
-  }
-   
- }
- const handelAdminlogin=()=>{
-  if (EmailInput.current && EmailInput.current.value && password.current && password.current.value) {
-    const userDetails: LoginDetail = { email: EmailInput.current.value, password: password.current.value };
-
-    // Cast dispatch to ThunkDispatch for type safety
-    dispatch(loginAdmin(userDetails));  
-  }
-   
- }
   return (
     <>
       <Stack spacing={5}>
-      {/* <Email /> */}
-      
-     <label>Enter your Email</label>
-      <Input  placeholder='Email'  ref={EmailInput}/>
-     
+        <label>Enter your Email</label>
+        <Input placeholder='Email' ref={EmailInput} />
 
-      {/* <PasswordInput /> */}
-      <Stack spacing={1}>
-      <label>Enter your password</label>
-      <InputGroup size='md'>
-      <Input
-        pr='4.5rem'
-        type={show ? 'text' : 'password'} 
-        placeholder='Enter password' ref={password}
-      />
-        <InputRightElement width='4.5rem'>
-        <Button h='1.75rem' size='sm' onClick={handleClick}>
-          {show ? 'Hide' : 'Show'}
+        <Stack spacing={1}>
+          <label>Enter your password</label>
+          <InputGroup size='md'>
+            <Input
+              pr='4.5rem'
+              type={show ? 'text' : 'password'}
+              placeholder='Enter password' ref={passwordInput}
+            />
+            <InputRightElement width='4.5rem'>
+              <Button h='1.75rem' size='sm' onClick={handleClick}>
+                {show ? 'Hide' : 'Show'}
+              </Button>
+            </InputRightElement>
+          </InputGroup>
+        </Stack>
+
+        <Button colorScheme='teal' variant='solid' onClick={handellogin}>
+          LOGIN
         </Button>
-      </InputRightElement>
-    </InputGroup>
-    </Stack>
-      <Button colorScheme='teal' variant='solid' onClick={handellogin}>
-       LOGIN
-    </Button>
-  <Button colorScheme='teal' variant='outline ' >
-    Forgot Password
-  </Button>
-  <p style={{display:'flex',justifyContent:'center'}}>Loign as <span onClick={handelAdminlogin} style={{color:'blue', marginLeft:'0.2vw'}} className={Style.hoveradmin} >admin</span></p>
-  
+        <Button colorScheme='teal' variant='outline'>
+          Forgot Password
+        </Button>
+        <p style={{ display: 'flex', justifyContent: 'center' }}>
+          Login as <span onClick={handelAdminlogin} style={{ color: 'blue', marginLeft: '0.2vw' }} className={Style.hoveradmin}>admin</span>
+        </p>
+      </Stack>
 
-  </Stack>
-  {loggedinUser && (
+      {loggedinUser && (
         <Alert
           status='success'
           pos='absolute'
@@ -104,8 +119,9 @@ const Login = () => {
           </AlertDescription>
         </Alert>
       )}
-    </>
-  )
-}
 
-export default Login
+    </>
+  );
+};
+
+export default Login;
