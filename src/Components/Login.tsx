@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { jsonAdmin, jsonUser } from '../redux/asyncFunctions';
 import Style from './Sartik.module.css';
 import { Store } from '../redux/types';
-import { loginFailure, loginSuccess } from '../redux/reducers';
+import { adminFailure, adminSuccess, loginFailure, loginSuccess } from '../redux/reducers';
 
 //typescript
 interface LoginDetail {
@@ -40,9 +40,9 @@ const Login = () => {
       const userDetails: LoginDetail = { email: EmailInput.current.value, password: passwordInput.current.value };
       let valid = adminData.some(user => user.email === userDetails.email && user.password === userDetails.password);
       if(valid){
-        dispatch(loginSuccess(userDetails));
+        dispatch(adminSuccess(userDetails));
       }else{
-        dispatch(loginFailure('Invalid email or password'));
+        dispatch(adminFailure('Invalid email or password'));
       }
     }
   };
