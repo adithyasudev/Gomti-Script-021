@@ -65,6 +65,7 @@ export const Carrercard = () => {
           <JobListing key={job.id} job={job} handleApplyNow={handleApplyNow} />
         ))}
       </div>
+    
 
       {selectedJob && (
         <Modal  isCentered isOpen={isOpen} onClose={closeModal}>

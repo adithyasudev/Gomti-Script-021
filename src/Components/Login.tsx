@@ -79,7 +79,7 @@ const Login = () => {
   <Button colorScheme='teal' variant='outline ' >
     Forgot Password
   </Button>
-  <p style={{display:'flex',justifyContent:'center'}}>Loin as <span onClick={handelAdminlogin} style={{color:'blue', marginLeft:'0.2vw'}} className={Style.hoveradmin} >admin</span></p>
+  <p style={{display:'flex',justifyContent:'center'}}>Loign as <span onClick={handelAdminlogin} style={{color:'blue', marginLeft:'0.2vw'}} className={Style.hoveradmin} >admin</span></p>
   
 
   </Stack>
