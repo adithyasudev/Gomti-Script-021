@@ -11,6 +11,7 @@ import { Provider } from "react-redux";
 import React from "react";
 import store from "./redux/reduxStore.ts";
 import Footer from "./Components/Footer.tsx";
+import { About5 } from "./Components/About5.tsx";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider store={store}>
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </BrowserRouter>
         <hr/>
         <Footer />
+        <About5 />
       </ChakraProvider>
     </Provider>
   </React.StrictMode>

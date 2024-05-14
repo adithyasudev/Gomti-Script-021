@@ -25,7 +25,7 @@ export const About2 = () => {
           openness and integrity.</p>
     </div>
     <div>
-        <img className={Style.img} src="https://convextech.com/wp-content/uploads/2022/07/shape.png" alt =""></img>
+        <img className={Style.img} src="https://picjj.com/images/2024/05/14/7NTOY.webp" alt =""></img>
     </div>
     </div>
     </div>

@@ -3,7 +3,6 @@
 
 import { Stack } from "@chakra-ui/react";
 import Style from "./LandingPage.module.css";
-import Bluebox from "./Bluebox";
 import CustomButton from "./button";
 import { useEffect, useState } from "react";
 
@@ -23,7 +22,7 @@ const LandingPage = () => {
     <Stack spacing={2}>
       <div
         style={{
-          backgroundImage: "url(https://convextech.com/wp-content/uploads/2022/07/hero-banner.png)",
+          backgroundImage: "url(https://picjj.com/images/2024/05/14/7NEus.webp)",
           backgroundSize: "cover ",
           width: "100vw",
           height: "70vh",
@@ -31,11 +30,11 @@ const LandingPage = () => {
 
         }}
       >
+       
         <div className={Style.portfolio} style={{margin:"auto"}}>
-          <Bluebox />
           <div className={`animated-text ${animated ? "animated" : ""}`}>
-            <p style={{fontWeight: '400'}}>
-              WORLD-CLASS PERFORMANCE SERVICES O HELP BRANDS GROW IN THE
+            <p style={{fontWeight: '900',fontSize:'20px'}}>
+              WORLD-CLASS PERFORMANCE SERVICES O HELP BRANDS <br /> GROW IN THE
               HYPERCONNECTED
             </p>
             <br/>

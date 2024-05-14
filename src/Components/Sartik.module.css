@@ -1,5 +1,5 @@
 .scaleimage:hover{
-   scale: 1.05;
+   scale: 1.07;
    -webkit-transition: all 0.4s ease-in-out;
    
 }
@@ -65,12 +65,13 @@
 
 }
 .bgport{
-    background-image: url(https://convextech.com/wp-content/uploads/2022/07/events-hero.jpg);
+    background-image: url(https://picjj.com/images/2024/05/14/7N072.jpg);
     height: fit-content;
     background-repeat: no-repeat;
     background-size: 100vw;
     height: 40vh;
     display: flex;
+    background-position: center;
     align-items: center;
 }
 .eventcard{

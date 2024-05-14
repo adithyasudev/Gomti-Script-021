@@ -12,16 +12,16 @@ const Uiuxdesign = () => {
         <div>
         <p style={{fontSize:'30px', color:'darkblue' ,fontWeight:'bolder'}}> UI/UX  Design</p>
         <p>
-          CyberMart is a multi-vendor system. An efficient<br/> system where you can 
+        Beyond boundries is a multi-vendor system. An efficient<br/> system where you can 
           register as seller as well as <br />customer. You can purchase and sold
-         anything you <br /> want. Cybermart is working in three of the <br />countries 
+         anything you <br /> want.  Beyond boundries is working in three of the <br />countries 
           like Pakistan, Shop for the millions of <br />products
          available in multiple categories and  <br />hot-selling brands.
          </p>
         </div>
        
       </div>
-      <div ><img src="https://convextech.com/wp-content/uploads/2022/07/CyberMart-1.png" alt="" className={Style.scaleimage} style={{width:'24vw'}}/></div>
+      <div ><img src="https://picjj.com/images/2024/05/14/7hZdq.webp" alt="" className={Style.scaleimage} style={{width:'24vw'}}/></div>
     </div>
   )
 }
