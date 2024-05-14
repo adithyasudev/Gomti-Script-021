@@ -33,16 +33,16 @@ const Footer = () => {
             <br />
   
             <img 
-            style={{marginLeft:"10px"}}
+            style={{marginLeft:"5px", height:'35px'}}
               decoding="async"
-              src="https://convextech.com/wp-content/uploads/2022/07/linkedin.png"
+              src="https://picjj.com/images/2024/05/14/7hfF1.png"
               alt="LinkedIn"
             ></img>
             <br />
             <img
-            style={{marginLeft:"10px"}}
+            style={{marginLeft:"10px", height:'20px'}}
               decoding="async"
-              src="https://convextech.com/wp-content/uploads/2022/07/mail.png"
+              src="https://picjj.com/images/2024/05/14/7hjLI.png"
               alt="Email"
             ></img>
           </div>
@@ -89,15 +89,15 @@ const Footer = () => {
           </div>
           <div style={{marginRight:"30px",marginTop:"10px"}}>
             <h2 style={{ fontSize: "30px" ,marginRight:"50px"}}>Contact Us</h2>
-            <img
+            <img style={{height:'35px', marginLeft:'-8px'}}
               decoding="async"
-              src="https://convextech.com/wp-content/uploads/2022/07/linkedin.png"
+              src="https://picjj.com/images/2024/05/14/7hfF1.png"
               alt="LinkedIn"
             ></img>
             <br />
-            <img
+            <img style={{ height:'28px'}}
               decoding="async"
-              src="https://convextech.com/wp-content/uploads/2022/07/mail.png"
+              src="https://picjj.com/images/2024/05/14/7hjLI.png"
               alt="Email"
             ></img>
           </div>
