@@ -20,9 +20,10 @@ const Career = () => {
         <div
           style={{
             backgroundImage:
-              "url(https://convextech.com/wp-content/uploads/2022/07/hero-banner.png)",
+              "url(https://picjj.com/images/2024/05/14/7N14I.webp)",
             backgroundSize: "cover ",
             width: "100vw",
+            backgroundPosition:'center',
             height: "70vh",
             margin: "auto",
           }}

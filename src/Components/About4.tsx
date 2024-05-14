@@ -6,6 +6,7 @@ import tushar from './images/tushar.jpg'
   import sourav from './images/sourav.jpg'
 import Bluebox from './Bluebox'
 import useScrollAnimation from '../customHooks/animation'
+import { EmailIcon, LinkIcon } from '@chakra-ui/icons'
   
 
 export const About4 = () => {
@@ -31,10 +32,10 @@ export const About4 = () => {
           <div className={Style.teamsocial}>
             <div  className={Style.mail}>
             <a   href="mailto:adithyasudev28@gmail.com">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/mail.png" alt="Email"></img>
+            <EmailIcon />
             </a></div>
             <a href="https://www.linkedin.com/in/adithya-s-7a7553151/">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/linkedin.png" alt="LinkedIn"></img>
+            <LinkIcon />
             </a>
           </div>
         </div>
@@ -51,10 +52,10 @@ export const About4 = () => {
           <span>Team Member</span>
           <div className={Style.teamsocial}>
             <a href="mailto:sharmasartik@gmail.com">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/mail.png" alt="Email"></img>
+            <EmailIcon />
             </a>
             <a href="https://www.linkedin.com/in/sartik-sharma-ab2152221/">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/linkedin.png" alt="LinkedIn"></img>
+            <LinkIcon />
             </a>
           </div>
         </div>
@@ -70,10 +71,10 @@ export const About4 = () => {
           <span>Team Member</span>
           <div className={Style.teamsocial}>
             <a href="mailto:Kajalkumari1235669@gmail.com">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/mail.png" alt="Email"></img>
+            <EmailIcon />
             </a>
             <a href="https://www.linkedin.com/in/kajalkumari03/">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/linkedin.png" alt="LinkedIn"></img>
+            <LinkIcon />
             </a>
           </div>
         </div>
@@ -88,10 +89,10 @@ export const About4 = () => {
           <span>Team Member</span>
           <div className={Style.teamsocial}>
             <a href="mailto:tusharbish0216@gmail.com">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/mail.png" alt="Email"></img>
+            <EmailIcon />
             </a>
             <a href="https://www.linkedin.com/in/tushar-bisht-84656829a/">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/linkedin.png" alt="LinkedIn"></img>
+            <LinkIcon />
             </a>
           </div>
         </div>
@@ -106,10 +107,10 @@ export const About4 = () => {
           <span>Team Member</span>
           <div className={Style.teamsocial}>
             <a href="mailto:sourabhrawar77200@gmail.com">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/mail.png" alt="Email"></img>
+              <EmailIcon />
             </a>
             <a href="www.linkedin.com/in/sourabh-rawat-123a81194">
-              <img decoding="async" src="https://convextech.com/wp-content/uploads/2022/07/linkedin.png" alt="LinkedIn"></img>
+            <LinkIcon />
             </a>
           </div>
         </div>

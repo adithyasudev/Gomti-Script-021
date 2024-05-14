@@ -26,18 +26,24 @@
 .Event1{
   padding-left: 100px; 
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  background-color: rgba(79, 79, 212, 0.623) ;
   color: white;
+  width: 100vw;
+  height: 40vh;
+  justify-content: center;
 
 }
 .bgport{
-    background-image: url(https://convextech.com/wp-content/uploads/2022/07/events-hero.jpg);
+    background-image: url(https://picjj.com/images/2024/05/14/7NksT.webp);
     height: fit-content;
     background-repeat: no-repeat;
     background-size: 100vw;
     height: 40vh;
     display: flex;
+    background-position: center;
     align-items: center;
+    background-size: cover;
 }
   @keyframes scaleAnimation {
     from {
@@ -250,15 +256,14 @@
  
   /* About 5 is statred  */
   .about5{
-    margin-top: 20px;
-    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
     background-color: rgb(181, 180, 180);
   }
-  .p5{
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 500px;
-  }
+  
   
   /* media queary */
   @media only screen and (max-width: 768px) {
