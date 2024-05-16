@@ -7,7 +7,7 @@ Welcome to Beyond Boundary, your gateway to limitless career opportunities! At B
 Frontend | Backend 
 
 ## Deplolyed App
-Frontend: https://66427e776c30d72d855065c1--rainbow-lebkuchen-11d421.netlify.app/
+Frontend:https://6645cad5f9b1737972e5748c--glistening-pithivier-5a324a.netlify.app/
 
 
 Backend: https://gomti-script-021.onrender.com/
