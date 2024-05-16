@@ -52,7 +52,7 @@ List out the key features of your application.
 - login: user can login to website.
 - An Email will be sent to user once he sign up.
 - Admin Dashbord: admin can add job openings and events as well as remove and close them
-- Data Fetching and Display: Use axion to fetch data from APIs or databases and dynamically display it on our website. This could include fetching an, product listings, user profiles, etc.
+- Data Fetching and Display: Use axion to fetch data from APIs or databases and dynamically display it on our website. This could include fetching an, employee and freelancer listings, user profiles, etc.
 
 
 ## Installation & Getting started
