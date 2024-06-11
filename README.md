@@ -88,7 +88,8 @@ List and provide a brief overview of the technologies used in the project.
 - TypeScript
 - Chakra Ui
 - Render
-- axion
+- axios
+- typescript
 
 
 
